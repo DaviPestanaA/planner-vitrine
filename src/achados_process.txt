@@ -1,0 +1,1474 @@
+node_modules\@babel\types\lib\index.d.ts: * A prefix AST traversal implementation meant for simple searching and processing.
+node_modules\@google\genai\dist\genai.d.ts:    processStreamResponse(response: Response): AsyncGenerator<types.HttpResponse>;
+node_modules\@google\genai\dist\genai.d.ts:     * @param {string | null | undefined} [opts.apiKey=process.env['GEMINI_API_KEY'] ?? null]
+node_modules\@google\genai\dist\genai.d.ts:     * @param {string} [opts.baseURL=process.env['GEMINI_NEXT_GEN_API_BASE_URL'] ?? https://generativelanguage.googleapis.com] - Override the default base URL for the API.
+node_modules\@google\genai\dist\genai.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\genai.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\genai.d.ts:    private processStreamResponse;
+node_modules\@google\genai\dist\genai.d.ts:     * Defaults to process.env['GEMINI_API_KEY'].
+node_modules\@google\genai\dist\genai.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_BASE_URL'].
+node_modules\@google\genai\dist\genai.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_LOG'] or 'warn' if it isn't set.
+node_modules\@google\genai\dist\genai.d.ts:/** Success and error statistics of processing multiple entities (for example, DataItems or structured data rows) in batch. This data type is not supported in Gemini API. */
+node_modules\@google\genai\dist\genai.d.ts:    /** Output only. In cases when enough errors are encountered a job, pipeline, or operation may be failed as a whole. Below is the number of entities for which the processing had not been finished (either in successful or failed state). Set to -1 if the number is unknown (for example, the operation failed before the total entity number could be collected). */
+node_modules\@google\genai\dist\genai.d.ts:    /** Output only. The number of entities that had been processed successfully. */
+node_modules\@google\genai\dist\genai.d.ts:        UnprocessableEntityError,
+node_modules\@google\genai\dist\genai.d.ts:    /** Output only. Processing state of the File. */
+node_modules\@google\genai\dist\genai.d.ts:    /** Output only. Error status if File processing failed. */
+node_modules\@google\genai\dist\genai.d.ts:    /** The number of documents in the FileSearchStore that are being processed. */
+node_modules\@google\genai\dist\genai.d.ts:    /** The number of documents in the FileSearchStore that have failed processing. */
+node_modules\@google\genai\dist\genai.d.ts:    PROCESSING = "PROCESSING",
+node_modules\@google\genai\dist\genai.d.ts:     If `response_schema` doesn't process your schema correctly, try using
+node_modules\@google\genai\dist\genai.d.ts:    /** Used to retain the processed HTTP headers in the response. */
+node_modules\@google\genai\dist\genai.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\genai.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\genai.d.ts:     * The job has been just created or resumed and processing has not yet begun.
+node_modules\@google\genai\dist\genai.d.ts: - Even before the end of turn, the data is processed incrementally
+node_modules\@google\genai\dist\genai.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\genai.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\genai.d.ts:    private processParamsMaybeAddMcpUsage;
+node_modules\@google\genai\dist\genai.d.ts:    private processAfcStream;
+node_modules\@google\genai\dist\genai.d.ts:     significant preprocessing time (typically images).
+node_modules\@google\genai\dist\genai.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\genai.d.ts:     * The request was processed using Pay-As-You-Go quota.
+node_modules\@google\genai\dist\genai.d.ts:declare class UnprocessableEntityError extends APIError<422, Headers> {
+node_modules\@google\genai\dist\genai.d.ts:    /** List of modalities that were processed in the request input. */
+node_modules\@google\genai\dist\genai.d.ts:    /** List of modalities that were processed in the cache input. */
+node_modules\@google\genai\dist\genai.d.ts:    /** List of modalities that were processed in the tool-use prompt. */
+node_modules\@google\genai\dist\node\node.d.ts:    processStreamResponse(response: Response): AsyncGenerator<types.HttpResponse>;
+node_modules\@google\genai\dist\node\node.d.ts:     * @param {string | null | undefined} [opts.apiKey=process.env['GEMINI_API_KEY'] ?? null]
+node_modules\@google\genai\dist\node\node.d.ts:     * @param {string} [opts.baseURL=process.env['GEMINI_NEXT_GEN_API_BASE_URL'] ?? https://generativelanguage.googleapis.com] - Override the default base URL for the API.
+node_modules\@google\genai\dist\node\node.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\node\node.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\node\node.d.ts:    private processStreamResponse;
+node_modules\@google\genai\dist\node\node.d.ts:     * Defaults to process.env['GEMINI_API_KEY'].
+node_modules\@google\genai\dist\node\node.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_BASE_URL'].
+node_modules\@google\genai\dist\node\node.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_LOG'] or 'warn' if it isn't set.
+node_modules\@google\genai\dist\node\node.d.ts:/** Success and error statistics of processing multiple entities (for example, DataItems or structured data rows) in batch. This data type is not supported in Gemini API. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** Output only. In cases when enough errors are encountered a job, pipeline, or operation may be failed as a whole. Below is the number of entities for which the processing had not been finished (either in successful or failed state). Set to -1 if the number is unknown (for example, the operation failed before the total entity number could be collected). */
+node_modules\@google\genai\dist\node\node.d.ts:    /** Output only. The number of entities that had been processed successfully. */
+node_modules\@google\genai\dist\node\node.d.ts:        UnprocessableEntityError,
+node_modules\@google\genai\dist\node\node.d.ts:    /** Output only. Processing state of the File. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** Output only. Error status if File processing failed. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** The number of documents in the FileSearchStore that are being processed. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** The number of documents in the FileSearchStore that have failed processing. */
+node_modules\@google\genai\dist\node\node.d.ts:    PROCESSING = "PROCESSING",
+node_modules\@google\genai\dist\node\node.d.ts:     If `response_schema` doesn't process your schema correctly, try using
+node_modules\@google\genai\dist\node\node.d.ts:    /** Used to retain the processed HTTP headers in the response. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\node\node.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\node\node.d.ts:     * The job has been just created or resumed and processing has not yet begun.
+node_modules\@google\genai\dist\node\node.d.ts: - Even before the end of turn, the data is processed incrementally
+node_modules\@google\genai\dist\node\node.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\node\node.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\node\node.d.ts:    private processParamsMaybeAddMcpUsage;
+node_modules\@google\genai\dist\node\node.d.ts:    private processAfcStream;
+node_modules\@google\genai\dist\node\node.d.ts:     significant preprocessing time (typically images).
+node_modules\@google\genai\dist\node\node.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\node\node.d.ts:     * The request was processed using Pay-As-You-Go quota.
+node_modules\@google\genai\dist\node\node.d.ts:declare class UnprocessableEntityError extends APIError<422, Headers> {
+node_modules\@google\genai\dist\node\node.d.ts:    /** List of modalities that were processed in the request input. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** List of modalities that were processed in the cache input. */
+node_modules\@google\genai\dist\node\node.d.ts:    /** List of modalities that were processed in the tool-use prompt. */
+node_modules\@google\genai\dist\web\web.d.ts:    processStreamResponse(response: Response): AsyncGenerator<types.HttpResponse>;
+node_modules\@google\genai\dist\web\web.d.ts:     * @param {string | null | undefined} [opts.apiKey=process.env['GEMINI_API_KEY'] ?? null]
+node_modules\@google\genai\dist\web\web.d.ts:     * @param {string} [opts.baseURL=process.env['GEMINI_NEXT_GEN_API_BASE_URL'] ?? https://generativelanguage.googleapis.com] - Override the default base URL for the API.
+node_modules\@google\genai\dist\web\web.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\web\web.d.ts:     * This method will wait for the previous message to be processed before
+node_modules\@google\genai\dist\web\web.d.ts:    private processStreamResponse;
+node_modules\@google\genai\dist\web\web.d.ts:     * Defaults to process.env['GEMINI_API_KEY'].
+node_modules\@google\genai\dist\web\web.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_BASE_URL'].
+node_modules\@google\genai\dist\web\web.d.ts:     * Defaults to process.env['GEMINI_NEXT_GEN_API_LOG'] or 'warn' if it isn't set.
+node_modules\@google\genai\dist\web\web.d.ts:/** Success and error statistics of processing multiple entities (for example, DataItems or structured data rows) in batch. This data type is not supported in Gemini API. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** Output only. In cases when enough errors are encountered a job, pipeline, or operation may be failed as a whole. Below is the number of entities for which the processing had not been finished (either in successful or failed state). Set to -1 if the number is unknown (for example, the operation failed before the total entity number could be collected). */
+node_modules\@google\genai\dist\web\web.d.ts:    /** Output only. The number of entities that had been processed successfully. */
+node_modules\@google\genai\dist\web\web.d.ts:        UnprocessableEntityError,
+node_modules\@google\genai\dist\web\web.d.ts:    /** Output only. Processing state of the File. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** Output only. Error status if File processing failed. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** The number of documents in the FileSearchStore that are being processed. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** The number of documents in the FileSearchStore that have failed processing. */
+node_modules\@google\genai\dist\web\web.d.ts:    PROCESSING = "PROCESSING",
+node_modules\@google\genai\dist\web\web.d.ts:     If `response_schema` doesn't process your schema correctly, try using
+node_modules\@google\genai\dist\web\web.d.ts:    /** Used to retain the processed HTTP headers in the response. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\web\web.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\web\web.d.ts:     * The job has been just created or resumed and processing has not yet begun.
+node_modules\@google\genai\dist\web\web.d.ts: - Even before the end of turn, the data is processed incrementally
+node_modules\@google\genai\dist\web\web.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\web\web.d.ts:     to process the audio more efficiently. */
+node_modules\@google\genai\dist\web\web.d.ts:    private processParamsMaybeAddMcpUsage;
+node_modules\@google\genai\dist\web\web.d.ts:    private processAfcStream;
+node_modules\@google\genai\dist\web\web.d.ts:     significant preprocessing time (typically images).
+node_modules\@google\genai\dist\web\web.d.ts:    /** The error encountered while processing the request.
+node_modules\@google\genai\dist\web\web.d.ts:     * The request was processed using Pay-As-You-Go quota.
+node_modules\@google\genai\dist\web\web.d.ts:declare class UnprocessableEntityError extends APIError<422, Headers> {
+node_modules\@google\genai\dist\web\web.d.ts:    /** List of modalities that were processed in the request input. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** List of modalities that were processed in the cache input. */
+node_modules\@google\genai\dist\web\web.d.ts:    /** List of modalities that were processed in the tool-use prompt. */
+node_modules\@jridgewell\remapping\src\source-map-tree.ts: * traceMappings is only called on the root level SourceMapTree, and begins the process of
+node_modules\@rolldown\pluginutils\dist\filter-vite-plugins.d.ts: * are intended only for Vite's dev server and should be excluded from the build process.
+node_modules\@types\babel__core\index.d.ts:     * The different modes define different ways that Babel can process the "root" value to get
+node_modules\@types\babel__core\index.d.ts:     * If any of patterns match, the current configuration object is considered inactive and is ignored during config processing.
+node_modules\@types\babel__core\index.d.ts:     * If all patterns fail to match, the current configuration object is considered inactive and is ignored during config processing.
+node_modules\@types\babel__core\index.d.ts:     * Since many instances of Babel may be running in the same process with different `caller` values,
+node_modules\@types\babel__core\index.d.ts:     * api.cache.using(() => process.env.NODE_ENV)
+node_modules\@types\babel__core\index.d.ts:     * api.cache.invalidate(() => process.env.NODE_ENV)
+node_modules\@types\babel__traverse\index.d.ts:     * Given an arbitrary function, process its content as if it were an arrow function, moving references
+node_modules\@types\node\async_hooks.d.ts: * * [`process.getActiveResourcesInfo()`](https://nodejs.org/docs/latest-v22.x/api/process.html#processgetactiveresourcesinfo) tracks active resources
+node_modules\@types\node\async_hooks.d.ts:     *   // Returns the ID of a TickObject (process.nextTick()) because all
+node_modules\@types\node\async_hooks.d.ts:         * in the current process.
+node_modules\@types\node\async_hooks.d.ts:        const PROCESSWRAP: number;
+node_modules\@types\node\buffer.d.ts:     * The transcoding process will use substitution characters if a given byte
+node_modules\@types\node\child_process.d.ts: * The `node:child_process` module provides the ability to spawn subprocesses in
+node_modules\@types\node\child_process.d.ts: * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts: *   console.log(`child process exited with code ${code}`);
+node_modules\@types\node\child_process.d.ts: * the parent Node.js process and the spawned subprocess. These pipes have
+node_modules\@types\node\child_process.d.ts: * limited (and platform-specific) capacity. If the subprocess writes to
+node_modules\@types\node\child_process.d.ts: * subprocess blocks, waiting for the pipe buffer to accept more data. This is
+node_modules\@types\node\child_process.d.ts: * variable if `env` is in the `options` object. Otherwise, `process.env.PATH` is
+node_modules\@types\node\child_process.d.ts: * manual for execvpe/execvp), on Windows the current processes environment
+node_modules\@types\node\child_process.d.ts: * passed to the subprocess. This might lead to issues on Windows when passing
+node_modules\@types\node\child_process.d.ts: * The {@link spawn} method spawns the child process asynchronously,
+node_modules\@types\node\child_process.d.ts: * the event loop until the spawned process either exits or is terminated.
+node_modules\@types\node\child_process.d.ts: * For convenience, the `node:child_process` module provides a handful of
+node_modules\@types\node\child_process.d.ts: * * {@link fork}: spawns a new Node.js process and invokes a
+node_modules\@types\node\child_process.d.ts: * stalling the event loop while spawned processes complete.
+node_modules\@types\node\child_process.d.ts: * @see [source](https://github.com/nodejs/node/blob/v22.x/lib/child_process.js)
+node_modules\@types\node\child_process.d.ts:declare module "child_process" {
+node_modules\@types\node\child_process.d.ts:     * Instances of the `ChildProcess` represent spawned child processes.
+node_modules\@types\node\child_process.d.ts:     * Instances of `ChildProcess` are not intended to be created directly. Rather,
+node_modules\@types\node\child_process.d.ts:     * instances of `ChildProcess`.
+node_modules\@types\node\child_process.d.ts:    class ChildProcess extends EventEmitter {
+node_modules\@types\node\child_process.d.ts:         * A `Writable Stream` that represents the child process's `stdin`.
+node_modules\@types\node\child_process.d.ts:         * If a child process waits to read all of its input, the child will not continue
+node_modules\@types\node\child_process.d.ts:         * `subprocess.stdin` is an alias for `subprocess.stdio[0]`. Both properties will
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.stdin` property can be `null` or `undefined` if the child process could not be successfully spawned.
+node_modules\@types\node\child_process.d.ts:         * A `Readable Stream` that represents the child process's `stdout`.
+node_modules\@types\node\child_process.d.ts:         * `subprocess.stdout` is an alias for `subprocess.stdio[1]`. Both properties will
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = spawn('ls');
+node_modules\@types\node\child_process.d.ts:         * subprocess.stdout.on('data', (data) => {
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.stdout` property can be `null` or `undefined` if the child process could not be successfully spawned.
+node_modules\@types\node\child_process.d.ts:         * A `Readable Stream` that represents the child process's `stderr`.
+node_modules\@types\node\child_process.d.ts:         * `subprocess.stderr` is an alias for `subprocess.stdio[2]`. Both properties will
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.stderr` property can be `null` or `undefined` if the child process could not be successfully spawned.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.channel` property is a reference to the child's IPC channel. If
+node_modules\@types\node\child_process.d.ts:         * A sparse array of pipes to the child process, corresponding with positions in
+node_modules\@types\node\child_process.d.ts:         * to the value `'pipe'`. `subprocess.stdio[0]`, `subprocess.stdio[1]`, and `subprocess.stdio[2]` are also available as `subprocess.stdin`, `subprocess.stdout`, and `subprocess.stderr`,
+node_modules\@types\node\child_process.d.ts:         * pipe, so only the parent's `subprocess.stdio[1]` is a stream, all other values
+node_modules\@types\node\child_process.d.ts:         * import child_process from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = child_process.spawn('ls', {
+node_modules\@types\node\child_process.d.ts:         * assert.strictEqual(subprocess.stdio[0], null);
+node_modules\@types\node\child_process.d.ts:         * assert.strictEqual(subprocess.stdio[0], subprocess.stdin);
+node_modules\@types\node\child_process.d.ts:         * assert(subprocess.stdout);
+node_modules\@types\node\child_process.d.ts:         * assert.strictEqual(subprocess.stdio[1], subprocess.stdout);
+node_modules\@types\node\child_process.d.ts:         * assert.strictEqual(subprocess.stdio[2], null);
+node_modules\@types\node\child_process.d.ts:         * assert.strictEqual(subprocess.stdio[2], subprocess.stderr);
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.stdio` property can be `undefined` if the child process could
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.killed` property indicates whether the child process
+node_modules\@types\node\child_process.d.ts:         * successfully received a signal from `subprocess.kill()`. The `killed` property
+node_modules\@types\node\child_process.d.ts:         * does not indicate that the child process has been terminated.
+node_modules\@types\node\child_process.d.ts:         * Returns the process identifier (PID) of the child process. If the child process
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.connected` property indicates whether it is still possible to
+node_modules\@types\node\child_process.d.ts:         * send and receive messages from a child process. When `subprocess.connected` is `false`, it is no longer possible to send or receive messages.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.exitCode` property indicates the exit code of the child process.
+node_modules\@types\node\child_process.d.ts:         * If the child process is still running, the field will be `null`.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.signalCode` property indicates the signal received by
+node_modules\@types\node\child_process.d.ts:         * the child process if any, else `null`.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.spawnargs` property represents the full list of command-line
+node_modules\@types\node\child_process.d.ts:         * arguments the child process was launched with.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.spawnfile` property indicates the executable file name of
+node_modules\@types\node\child_process.d.ts:         * the child process that is launched.
+node_modules\@types\node\child_process.d.ts:         * For {@link fork}, its value will be equal to `process.execPath`.
+node_modules\@types\node\child_process.d.ts:         * in which the child process is launched.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.kill()` method sends a signal to the child process. If no
+node_modules\@types\node\child_process.d.ts:         * argument is given, the process will be sent the `'SIGTERM'` signal. See [`signal(7)`](http://man7.org/linux/man-pages/man7/signal.7.html) for a list of available signals. This function
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         *     `child process terminated due to receipt of signal ${signal}`);
+node_modules\@types\node\child_process.d.ts:         * // Send SIGHUP to process.
+node_modules\@types\node\child_process.d.ts:         * The `ChildProcess` object may emit an `'error'` event if the signal
+node_modules\@types\node\child_process.d.ts:         * cannot be delivered. Sending a signal to a child process that has already exited
+node_modules\@types\node\child_process.d.ts:         * process identifier (PID) has been reassigned to another process, the signal will
+node_modules\@types\node\child_process.d.ts:         * be delivered to that process instead which can have unexpected results.
+node_modules\@types\node\child_process.d.ts:         * While the function is called `kill`, the signal delivered to the child process
+node_modules\@types\node\child_process.d.ts:         * may not actually terminate the process.
+node_modules\@types\node\child_process.d.ts:         * ignored, and the process will be killed forcefully and abruptly (similar to `'SIGKILL'`).
+node_modules\@types\node\child_process.d.ts:         * On Linux, child processes of child processes will not be terminated
+node_modules\@types\node\child_process.d.ts:         * new process in a shell or with the use of the `shell` option of `ChildProcess`:
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = spawn(
+node_modules\@types\node\child_process.d.ts:         *       console.log(process.pid, 'is alive')
+node_modules\@types\node\child_process.d.ts:         *   subprocess.kill(); // Does not terminate the Node.js process in the shell.
+node_modules\@types\node\child_process.d.ts:         * Calls {@link ChildProcess.kill} with `'SIGTERM'`.
+node_modules\@types\node\child_process.d.ts:         * i.e. when using {@link fork}), the `subprocess.send()` method can
+node_modules\@types\node\child_process.d.ts:         * be used to send messages to the child process. When the child process is a
+node_modules\@types\node\child_process.d.ts:         * import cp from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * process.on('message', (m) => {
+node_modules\@types\node\child_process.d.ts:         * process.send({ foo: 'bar', baz: NaN });
+node_modules\@types\node\child_process.d.ts:         * Child Node.js processes will have a `process.send()` method of their own
+node_modules\@types\node\child_process.d.ts:         * The optional `sendHandle` argument that may be passed to `subprocess.send()` is
+node_modules\@types\node\child_process.d.ts:         * for passing a TCP server or socket object to the child process. The child will
+node_modules\@types\node\child_process.d.ts:         * If no `callback` function is provided and the message cannot be sent, an `'error'` event will be emitted by the `ChildProcess` object. This can
+node_modules\@types\node\child_process.d.ts:         * happen, for instance, when the child process has already exited.
+node_modules\@types\node\child_process.d.ts:         * `subprocess.send()` will return `false` if the channel has closed or when the
+node_modules\@types\node\child_process.d.ts:         * a TCP server object to the child process as illustrated in the example below:
+node_modules\@types\node\child_process.d.ts:         * import { fork } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = fork('subprocess.js');
+node_modules\@types\node\child_process.d.ts:         *   subprocess.send('server', server);
+node_modules\@types\node\child_process.d.ts:         * process.on('message', (m, server) => {
+node_modules\@types\node\child_process.d.ts:         * socket to the child process. The example below spawns two children that each
+node_modules\@types\node\child_process.d.ts:         * import { fork } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const normal = fork('subprocess.js', ['normal']);
+node_modules\@types\node\child_process.d.ts:         * const special = fork('subprocess.js', ['special']);
+node_modules\@types\node\child_process.d.ts:         * // the sockets from being read before they are sent to the child process.
+node_modules\@types\node\child_process.d.ts:         * The `subprocess.js` would receive the socket handle as the second argument
+node_modules\@types\node\child_process.d.ts:         * process.on('message', (m, socket) => {
+node_modules\@types\node\child_process.d.ts:         *       // sent and the time it is received in the child process.
+node_modules\@types\node\child_process.d.ts:         *       socket.end(`Request handled with ${process.argv[2]} priority`);
+node_modules\@types\node\child_process.d.ts:         * Do not use `.maxConnections` on a socket that has been passed to a subprocess.
+node_modules\@types\node\child_process.d.ts:         * Any `'message'` handlers in the subprocess should verify that `socket` exists,
+node_modules\@types\node\child_process.d.ts:         * this method the `subprocess.connected` and `process.connected` properties in
+node_modules\@types\node\child_process.d.ts:         * no longer possible to pass messages between the processes.
+node_modules\@types\node\child_process.d.ts:         * process of being received. This will most often be triggered immediately after
+node_modules\@types\node\child_process.d.ts:         * calling `subprocess.disconnect()`.
+node_modules\@types\node\child_process.d.ts:         * When the child process is a Node.js instance (e.g. spawned using {@link fork}), the `process.disconnect()` method can be invoked
+node_modules\@types\node\child_process.d.ts:         * within the child process to close the IPC channel as well.
+node_modules\@types\node\child_process.d.ts:         * parent from waiting for a given `subprocess` to exit, use the `subprocess.unref()` method. Doing so will cause the parent's event loop to not
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = spawn(process.argv[0], ['child_program.js'], {
+node_modules\@types\node\child_process.d.ts:         * subprocess.unref();
+node_modules\@types\node\child_process.d.ts:         * Calling `subprocess.ref()` after making a call to `subprocess.unref()` will
+node_modules\@types\node\child_process.d.ts:         * restore the removed reference count for the child process, forcing the parent
+node_modules\@types\node\child_process.d.ts:         * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:         * const subprocess = spawn(process.argv[0], ['child_program.js'], {
+node_modules\@types\node\child_process.d.ts:         * subprocess.unref();
+node_modules\@types\node\child_process.d.ts:         * subprocess.ref();
+node_modules\@types\node\child_process.d.ts:    interface ChildProcessWithoutNullStreams extends ChildProcess {
+node_modules\@types\node\child_process.d.ts:    interface ChildProcessByStdio<I extends null | Writable, O extends null | Readable, E extends null | Readable>
+node_modules\@types\node\child_process.d.ts:        extends ChildProcess
+node_modules\@types\node\child_process.d.ts:         * Specify the kind of serialization used for sending messages between processes.
+node_modules\@types\node\child_process.d.ts:         * The signal value to be used when the spawned process will be killed by the abort signal.
+node_modules\@types\node\child_process.d.ts:         * In milliseconds the maximum amount of time the process is allowed to run.
+node_modules\@types\node\child_process.d.ts:    interface ProcessEnvOptions {
+node_modules\@types\node\child_process.d.ts:        env?: NodeJS.ProcessEnv | undefined;
+node_modules\@types\node\child_process.d.ts:    interface CommonOptions extends ProcessEnvOptions {
+node_modules\@types\node\child_process.d.ts:         * {@link ChildProcess.stdio} for more information.
+node_modules\@types\node\child_process.d.ts:     * The `child_process.spawn()` method spawns a new process using the given `command`, with command-line arguments in `args`. If omitted, `args` defaults
+node_modules\@types\node\child_process.d.ts:     *   env: process.env,
+node_modules\@types\node\child_process.d.ts:     * Use `cwd` to specify the working directory from which the process is spawned.
+node_modules\@types\node\child_process.d.ts:     * but the path does not exist, the child process emits an `ENOENT` error
+node_modules\@types\node\child_process.d.ts:     * process, the default is `process.env`.
+node_modules\@types\node\child_process.d.ts:     * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     *   console.log(`child process exited with code ${code}`);
+node_modules\@types\node\child_process.d.ts:     * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     *     console.log(`ps process exited with code ${code}`);
+node_modules\@types\node\child_process.d.ts:     *     console.log(`grep process exited with code ${code}`);
+node_modules\@types\node\child_process.d.ts:     * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * const subprocess = spawn('bad_command');
+node_modules\@types\node\child_process.d.ts:     * subprocess.on('error', (err) => {
+node_modules\@types\node\child_process.d.ts:     *   console.error('Failed to start subprocess.');
+node_modules\@types\node\child_process.d.ts:     * Certain platforms (macOS, Linux) will use the value of `argv[0]` for the process
+node_modules\@types\node\child_process.d.ts:     * Node.js overwrites `argv[0]` with `process.execPath` on startup, so `process.argv[0]` in a Node.js child process will not match the `argv0` parameter passed to `spawn` from the parent. Retrieve
+node_modules\@types\node\child_process.d.ts:     * it with the `process.argv0` property instead.
+node_modules\@types\node\child_process.d.ts:     * If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except
+node_modules\@types\node\child_process.d.ts:     * import { spawn } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * controller.abort(); // Stops the child process
+node_modules\@types\node\child_process.d.ts:    function spawn(command: string, options?: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, Readable, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, Readable, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, null, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, Readable, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, null, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, Readable, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, null, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, null, null>;
+node_modules\@types\node\child_process.d.ts:    function spawn(command: string, options: SpawnOptions): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessWithoutNullStreams;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, Readable, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, Readable, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, null, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, Readable, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<Writable, null, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, Readable, null>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, null, Readable>;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcessByStdio<null, null, null>;
+node_modules\@types\node\child_process.d.ts:    function spawn(command: string, args: readonly string[], options: SpawnOptions): ChildProcess;
+node_modules\@types\node\child_process.d.ts:     * generated output. The `command` string passed to the exec function is processed
+node_modules\@types\node\child_process.d.ts:     * import { exec } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * the exit code of the process. By convention, any exit code other than `0` indicates an error. `error.signal` will be the signal that terminated the
+node_modules\@types\node\child_process.d.ts:     * process.
+node_modules\@types\node\child_process.d.ts:     * stdout and stderr output of the child process. By default, Node.js will decode
+node_modules\@types\node\child_process.d.ts:     * import { exec } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * Unlike the [`exec(3)`](http://man7.org/linux/man-pages/man3/exec.3.html) POSIX system call, `child_process.exec()` does not replace
+node_modules\@types\node\child_process.d.ts:     * the existing process and uses a shell to execute the command.
+node_modules\@types\node\child_process.d.ts:     * a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned `ChildProcess` instance is attached to the `Promise` as a `child` property. In
+node_modules\@types\node\child_process.d.ts:     * import child_process from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * const exec = util.promisify(child_process.exec);
+node_modules\@types\node\child_process.d.ts:     * If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except
+node_modules\@types\node\child_process.d.ts:     * import { exec } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * @param callback called with the output when process terminates.
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:        child: ChildProcess;
+node_modules\@types\node\child_process.d.ts:     * The `child_process.execFile()` function is similar to {@link exec} except that it does not spawn a shell by default. Rather, the specified
+node_modules\@types\node\child_process.d.ts:     * executable `file` is spawned directly as a new process making it slightly more
+node_modules\@types\node\child_process.d.ts:     * import { execFile } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * stdout and stderr output of the child process. By default, Node.js will decode
+node_modules\@types\node\child_process.d.ts:     * a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned `ChildProcess` instance is attached to the `Promise` as a `child` property. In
+node_modules\@types\node\child_process.d.ts:     * import child_process from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * const execFile = util.promisify(child_process.execFile);
+node_modules\@types\node\child_process.d.ts:     * If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except
+node_modules\@types\node\child_process.d.ts:     * import { execFile } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     * @param callback Called with the output when process terminates.
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    ): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    interface ForkOptions extends ProcessEnvOptions, MessagingOptions, Abortable {
+node_modules\@types\node\child_process.d.ts:         * {@link ChildProcess.stdio} for more information.
+node_modules\@types\node\child_process.d.ts:     * The `child_process.fork()` method is a special case of {@link spawn} used specifically to spawn new Node.js processes.
+node_modules\@types\node\child_process.d.ts:     * Like {@link spawn}, a `ChildProcess` object is returned. The
+node_modules\@types\node\child_process.d.ts:     * returned `ChildProcess` will have an additional communication channel
+node_modules\@types\node\child_process.d.ts:     * child. See `subprocess.send()` for details.
+node_modules\@types\node\child_process.d.ts:     * Keep in mind that spawned Node.js child processes are
+node_modules\@types\node\child_process.d.ts:     * that is established between the two. Each process has its own memory, with
+node_modules\@types\node\child_process.d.ts:     * required, spawning a large number of child Node.js processes is not
+node_modules\@types\node\child_process.d.ts:     * By default, `child_process.fork()` will spawn new Node.js instances using the `process.execPath` of the parent process. The `execPath` property in the `options` object allows for an alternative
+node_modules\@types\node\child_process.d.ts:     * Node.js processes launched with a custom `execPath` will communicate with the
+node_modules\@types\node\child_process.d.ts:     * parent process using the file descriptor (fd) identified using the
+node_modules\@types\node\child_process.d.ts:     * environment variable `NODE_CHANNEL_FD` on the child process.
+node_modules\@types\node\child_process.d.ts:     * Unlike the [`fork(2)`](http://man7.org/linux/man-pages/man2/fork.2.html) POSIX system call, `child_process.fork()` does not clone the
+node_modules\@types\node\child_process.d.ts:     * current process.
+node_modules\@types\node\child_process.d.ts:     * The `shell` option available in {@link spawn} is not supported by `child_process.fork()` and will be ignored if set.
+node_modules\@types\node\child_process.d.ts:     * If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except
+node_modules\@types\node\child_process.d.ts:     * if (process.argv[2] === 'child') {
+node_modules\@types\node\child_process.d.ts:     *     console.log(`Hello from ${process.argv[2]}!`);
+node_modules\@types\node\child_process.d.ts:     *   import { fork } from 'node:child_process';
+node_modules\@types\node\child_process.d.ts:     *   controller.abort(); // Stops the child process
+node_modules\@types\node\child_process.d.ts:    function fork(modulePath: string | URL, options?: ForkOptions): ChildProcess;
+node_modules\@types\node\child_process.d.ts:    function fork(modulePath: string | URL, args?: readonly string[], options?: ForkOptions): ChildProcess;
+node_modules\@types\node\child_process.d.ts:     * The `child_process.spawnSync()` method is generally identical to {@link spawn} with the exception that the function will not return
+node_modules\@types\node\child_process.d.ts:     * until the child process has fully closed. When a timeout has been encountered
+node_modules\@types\node\child_process.d.ts:     * and `killSignal` is sent, the method won't return until the process has
+node_modules\@types\node\child_process.d.ts:     * completely exited. If the process intercepts and handles the `SIGTERM` signal
+node_modules\@types\node\child_process.d.ts:     * and doesn't exit, the parent process will wait until the child process has
+node_modules\@types\node\child_process.d.ts:         * {@link ChildProcess.stdio} for more information.
+node_modules\@types\node\child_process.d.ts:     * The `child_process.execSync()` method is generally identical to {@link exec} with the exception that the method will not return
+node_modules\@types\node\child_process.d.ts:     * until the child process has fully closed. When a timeout has been encountered
+node_modules\@types\node\child_process.d.ts:     * and `killSignal` is sent, the method won't return until the process has
+node_modules\@types\node\child_process.d.ts:     * completely exited. If the child process intercepts and handles the `SIGTERM` signal and doesn't exit, the parent process will wait until the child process
+node_modules\@types\node\child_process.d.ts:     * If the process times out or has a non-zero exit code, this method will throw.
+node_modules\@types\node\child_process.d.ts:     * The `child_process.execFileSync()` method is generally identical to {@link execFile} with the exception that the method will not
+node_modules\@types\node\child_process.d.ts:     * return until the child process has fully closed. When a timeout has been
+node_modules\@types\node\child_process.d.ts:     * encountered and `killSignal` is sent, the method won't return until the process
+node_modules\@types\node\child_process.d.ts:     * If the child process intercepts and handles the `SIGTERM` signal and
+node_modules\@types\node\child_process.d.ts:     * does not exit, the parent process will still wait until the child process has
+node_modules\@types\node\child_process.d.ts:     * If the process times out or has a non-zero exit code, this method will throw an `Error` that will include the full result of the underlying {@link spawnSync}.
+node_modules\@types\node\child_process.d.ts:declare module "node:child_process" {
+node_modules\@types\node\child_process.d.ts:    export * from "child_process";
+node_modules\@types\node\cluster.d.ts: * Clusters of Node.js processes can be used to run multiple instances of Node.js
+node_modules\@types\node\cluster.d.ts: * that can distribute workloads among their application threads. When process isolation
+node_modules\@types\node\cluster.d.ts: * The cluster module allows easy creation of child processes that all share
+node_modules\@types\node\cluster.d.ts: * import process from 'node:process';
+node_modules\@types\node\cluster.d.ts: *   console.log(`Primary ${process.pid} is running`);
+node_modules\@types\node\cluster.d.ts: *     console.log(`worker ${worker.process.pid} died`);
+node_modules\@types\node\cluster.d.ts: *   console.log(`Worker ${process.pid} started`);
+node_modules\@types\node\cluster.d.ts:    import * as child from "node:child_process";
+node_modules\@types\node\cluster.d.ts:         * @default process.execArgv
+node_modules\@types\node\cluster.d.ts:         * @default process.argv[1]
+node_modules\@types\node\cluster.d.ts:         * @default process.argv.slice(2)
+node_modules\@types\node\cluster.d.ts:         * Configures the stdio of forked processes. Because the cluster module relies on IPC to function, this configuration must
+node_modules\@types\node\cluster.d.ts:         * contain an `'ipc'` entry. When this option is provided, it overrides `silent`. See [`child_prcess.spawn()`](https://nodejs.org/docs/latest-v22.x/api/child_process.html#child_processspawncommand-args-options)'s
+node_modules\@types\node\cluster.d.ts:         * [`stdio`](https://nodejs.org/docs/latest-v22.x/api/child_process.html#optionsstdio).
+node_modules\@types\node\cluster.d.ts:         * Sets the user identity of the process. (See [`setuid(2)`](https://man7.org/linux/man-pages/man2/setuid.2.html).)
+node_modules\@types\node\cluster.d.ts:         * Sets the group identity of the process. (See [`setgid(2)`](https://man7.org/linux/man-pages/man2/setgid.2.html).)
+node_modules\@types\node\cluster.d.ts:         * By default each worker gets its own port, incremented from the primary's `process.debugPort`.
+node_modules\@types\node\cluster.d.ts:         * Specify the kind of serialization used for sending messages between processes. Possible values are `'json'` and `'advanced'`.
+node_modules\@types\node\cluster.d.ts:         * See [Advanced serialization for `child_process`](https://nodejs.org/docs/latest-v22.x/api/child_process.html#advanced-serialization) for more details.
+node_modules\@types\node\cluster.d.ts:         * Current working directory of the worker process.
+node_modules\@types\node\cluster.d.ts:         * @default undefined (inherits from parent process)
+node_modules\@types\node\cluster.d.ts:         * Hide the forked processes console window that would normally be created on Windows systems.
+node_modules\@types\node\cluster.d.ts:         * All workers are created using [`child_process.fork()`](https://nodejs.org/docs/latest-v22.x/api/child_process.html#child_processforkmodulepath-args-options), the returned object
+node_modules\@types\node\cluster.d.ts:         * from this function is stored as `.process`. In a worker, the global `process` is stored.
+node_modules\@types\node\cluster.d.ts:         * See: [Child Process module](https://nodejs.org/docs/latest-v22.x/api/child_process.html#child_processforkmodulepath-args-options).
+node_modules\@types\node\cluster.d.ts:         * Workers will call `process.exit(0)` if the `'disconnect'` event occurs
+node_modules\@types\node\cluster.d.ts:         * on `process` and `.exitedAfterDisconnect` is not `true`. This protects against
+node_modules\@types\node\cluster.d.ts:        process: child.ChildProcess;
+node_modules\@types\node\cluster.d.ts:         * In the primary, this sends a message to a specific worker. It is identical to [`ChildProcess.send()`](https://nodejs.org/docs/latest-v22.x/api/child_process.html#subprocesssendmessage-sendhandle-options-callback).
+node_modules\@types\node\cluster.d.ts:         * In a worker, this sends a message to the primary. It is identical to `process.send()`.
+node_modules\@types\node\cluster.d.ts:         *   process.on('message', (msg) => {
+node_modules\@types\node\cluster.d.ts:         *     process.send(msg);
+node_modules\@types\node\cluster.d.ts:         * disconnecting the `worker.process`, and once disconnected, killing with `signal`. In the worker, it does it by killing the process with `signal`.
+node_modules\@types\node\cluster.d.ts:         * The `kill()` function kills the worker process without waiting for a graceful
+node_modules\@types\node\cluster.d.ts:         * disconnect, it has the same behavior as `worker.process.kill()`.
+node_modules\@types\node\cluster.d.ts:         * In a worker, `process.kill()` exists, but it is not this function;
+node_modules\@types\node\cluster.d.ts:         * it is [`kill()`](https://nodejs.org/docs/latest-v22.x/api/process.html#processkillpid-signal).
+node_modules\@types\node\cluster.d.ts:         * @param [signal='SIGTERM'] Name of the kill signal to send to the worker process.
+node_modules\@types\node\cluster.d.ts:         * In a worker, `process.disconnect` exists, but it is not this function;
+node_modules\@types\node\cluster.d.ts:         *   process.on('message', (msg) => {
+node_modules\@types\node\cluster.d.ts:         * This function returns `true` if the worker's process has terminated (either
+node_modules\@types\node\cluster.d.ts:         * import process from 'node:process';
+node_modules\@types\node\cluster.d.ts:         *   console.log(`Primary ${process.pid} is running`);
+node_modules\@types\node\cluster.d.ts:         *     res.end(`Current process\n ${process.pid}`);
+node_modules\@types\node\cluster.d.ts:         *     process.kill(process.pid);
+node_modules\@types\node\cluster.d.ts:         * Spawn a new worker process.
+node_modules\@types\node\cluster.d.ts:         * This can only be called from the primary process.
+node_modules\@types\node\cluster.d.ts:         * @param env Key/value pairs to add to worker process environment.
+node_modules\@types\node\cluster.d.ts:         * True if the process is a primary. This is determined by the `process.env.NODE_UNIQUE_ID`. If `process.env.NODE_UNIQUE_ID`
+node_modules\@types\node\cluster.d.ts:         * True if the process is not a primary (it is the negation of `cluster.isPrimary`).
+node_modules\@types\node\cluster.d.ts:         * This can only be called from the primary process.
+node_modules\@types\node\cluster.d.ts:         * A reference to the current worker object. Not available in the primary process.
+node_modules\@types\node\cluster.d.ts:         * A hash that stores the active worker objects, keyed by `id` field. This makes it easy to loop through all the workers. It is only available in the primary process.
+node_modules\@types\node\console.d.ts: * * A global `console` instance configured to write to [`process.stdout`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdout) and
+node_modules\@types\node\console.d.ts: * [`process.stderr`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstderr). The global `console` can be used without importing the `node:console` module.
+node_modules\@types\node\console.d.ts: * asynchronous like all other Node.js streams. See the [`note on process I/O`](https://nodejs.org/docs/latest-v22.x/api/process.html#a-note-on-process-io) for
+node_modules\@types\node\console.d.ts: * //     at node:internal/process/execution:77:19
+node_modules\@types\node\console.d.ts: * //     at evalScript (node:internal/process/execution:76:60)
+node_modules\@types\node\console.d.ts:             * console.time('process');
+node_modules\@types\node\console.d.ts:             * const value = expensiveProcess1(); // Returns 42
+node_modules\@types\node\console.d.ts:             * console.timeLog('process', value);
+node_modules\@types\node\console.d.ts:             * // Prints "process: 365.227ms 42".
+node_modules\@types\node\console.d.ts:             * doExpensiveProcess2(value);
+node_modules\@types\node\console.d.ts:             * console.timeEnd('process');
+node_modules\@types\node\console.d.ts:         * * A global `console` instance configured to write to [`process.stdout`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdout) and
+node_modules\@types\node\console.d.ts:         * [`process.stderr`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstderr). The global `console` can be used without importing the `node:console` module.
+node_modules\@types\node\console.d.ts:         * asynchronous like all other Node.js streams. See the [`note on process I/O`](https://nodejs.org/docs/latest-v22.x/api/process.html#a-note-on-process-io) for
+node_modules\@types\node\console.d.ts:         * //     at node:internal/process/execution:77:19
+node_modules\@types\node\console.d.ts:         * //     at evalScript (node:internal/process/execution:76:60)
+node_modules\@types\node\crypto.d.ts:        /** Specifies the active default cipher list used by the current Node.js process  (colon-separated values). */
+node_modules\@types\node\crypto.d.ts:     * import { argv } from 'node:process';
+node_modules\@types\node\crypto.d.ts:     * import { argv } from 'node:process';
+node_modules\@types\node\crypto.d.ts:     * import { stdout } from 'node:process';
+node_modules\@types\node\crypto.d.ts:     * import { stdout } from 'node:process';
+node_modules\@types\node\crypto.d.ts:     * generate nor exchange a group modulus beforehand, saving both processor
+node_modules\@types\node\dgram.d.ts:         * A bound datagram socket keeps the Node.js process running to receive
+node_modules\@types\node\dgram.d.ts:         * kernel when the socket is closed or the process terminates, so most apps will
+node_modules\@types\node\dgram.d.ts:         * @return Number of send requests currently in the queue awaiting to be processed.
+node_modules\@types\node\dgram.d.ts:         * By default, binding a socket will cause it to block the Node.js process from
+node_modules\@types\node\dgram.d.ts:         * process active. The `socket.ref()` method adds the socket back to the reference
+node_modules\@types\node\dgram.d.ts:         * By default, binding a socket will cause it to block the Node.js process from
+node_modules\@types\node\dgram.d.ts:         * process active, allowing the process to exit even if the socket is still
+node_modules\@types\node\dgram.d.ts:         * socket is closed or the process terminates, so most apps will never have
+node_modules\@types\node\diagnostics_channel.d.ts:     * simplify the process of producing events for tracing application flow. {@link tracingChannel} is used to construct a `TracingChannel`. As with `Channel` it is recommended to create and reuse a
+node_modules\@types\node\domain.d.ts: * will be notified, rather than losing the context of the error in the `process.on('uncaughtException')` handler, or causing the program to
+node_modules\@types\node\domain.d.ts:         * The `enter()` method is plumbing used by the `run()`, `bind()`, and `intercept()` methods to set the active domain. It sets `domain.active` and `process.domain` to the domain, and implicitly
+node_modules\@types\node\domain.d.ts:         *   process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         * import process from 'node:process';
+node_modules\@types\node\events.d.ts:         * process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         * process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         * import process from 'node:process';
+node_modules\@types\node\events.d.ts:         * process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         *   // processes one event at a time (even with await). Do not use
+node_modules\@types\node\events.d.ts:         * import process from 'node:process';
+node_modules\@types\node\events.d.ts:         *   process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         *     // processes one event at a time (even with await). Do not use
+node_modules\@types\node\events.d.ts:         * process.nextTick(() => ac.abort());
+node_modules\@types\node\events.d.ts:         * import process from 'node:process';
+node_modules\@types\node\events.d.ts:         * process.nextTick(() => {
+node_modules\@types\node\events.d.ts:         * Installing a listener using this symbol does not change the behavior once an `'error'` event is emitted. Therefore, the process will still crash if no
+node_modules\@types\node\events.d.ts:         * The emitted warning can be inspected with `process.on('warning')` and will
+node_modules\@types\node\fs\promises.d.ts:         * is available. This can prevent the process from exiting and the stream from
+node_modules\@types\node\fs\promises.d.ts:         *   // operation, the process may still not be able to exit successfully
+node_modules\@types\node\fs\promises.d.ts:     * written by the current process.
+node_modules\@types\node\fs\promises.d.ts:     * condition, since other processes may change the file's state between the two
+node_modules\@types\node\fs.d.ts:         * event loop running, the process may exit before the `fs.StatWatcher` object's
+node_modules\@types\node\fs.d.ts:         * event loop running, the process may exit before the `fs.FSWatcher` object's
+node_modules\@types\node\fs.d.ts:     * The `callback` gets two arguments `(err, resolvedPath)`. May use `process.cwd` to resolve relative paths.
+node_modules\@types\node\fs.d.ts:     * whether the process should continue to run as long as files are being watched.
+node_modules\@types\node\fs.d.ts:     * whether the process should continue to run as long as files are being watched.
+node_modules\@types\node\fs.d.ts:     * so introduces a race condition, since other processes may change the file's
+node_modules\@types\node\fs.d.ts:     * process.
+node_modules\@types\node\fs.d.ts:        /** Constant for fs.access(). File is visible to the calling process. */
+node_modules\@types\node\fs.d.ts:        /** Constant for fs.access(). File can be read by the calling process. */
+node_modules\@types\node\fs.d.ts:        /** Constant for fs.access(). File can be written by the calling process. */
+node_modules\@types\node\fs.d.ts:        /** Constant for fs.access(). File can be executed by the calling process. */
+node_modules\@types\node\fs.d.ts:         * opening the path shall not cause that terminal to become the controlling terminal for the process
+node_modules\@types\node\fs.d.ts:         * (if the process does not already have one).
+node_modules\@types\node\fs.d.ts:     * so introduces a race condition, since other processes may change the file's
+node_modules\@types\node\fs.d.ts:     * process.
+node_modules\@types\node\fs.d.ts:     * available. This can prevent the process from exiting and the stream from
+node_modules\@types\node\fs.d.ts:     *   // operation, the process may still not be able to exit successfully
+node_modules\@types\node\fs.d.ts:         * @default process.cwd()
+node_modules\@types\node\globals.d.ts:declare var process: NodeJS.Process;
+node_modules\@types\node\http.d.ts:         * Sends a HTTP/1.1 102 Processing message to the client, indicating that
+node_modules\@types\node\http.d.ts:        writeProcessing(callback?: () => void): void;
+node_modules\@types\node\http.d.ts:     * 'process out of memory' error.
+node_modules\@types\node\http.d.ts:         * new URL(`http://${process.env.HOST ?? 'localhost'}${request.url}`);
+node_modules\@types\node\http.d.ts:         * When `request.url` is `'/status?name=ryan'` and `process.env.HOST` is undefined:
+node_modules\@types\node\http.d.ts:         * > new URL(`http://${process.env.HOST ?? 'localhost'}${request.url}`);
+node_modules\@types\node\http.d.ts:         * Ensure that you set `process.env.HOST` to the server's host name, or consider replacing this part entirely. If using `req.headers.host`, ensure proper
+node_modules\@types\node\http.d.ts:     * to keep the Node.js process running when there are no outstanding requests.
+node_modules\@types\node\http2.d.ts:         * @param lastStreamID The numeric ID of the last processed `Http2Stream`
+node_modules\@types\node\http2.d.ts:         * meaning within HTTP/2, the argument will have no effect and a process warning
+node_modules\@types\node\http2.d.ts:        const HTTP_STATUS_PROCESSING: number;
+node_modules\@types\node\http2.d.ts:        const HTTP_STATUS_UNPROCESSABLE_ENTITY: number;
+node_modules\@types\node\https.d.ts:     *     process.stdout.write(d);
+node_modules\@types\node\https.d.ts:     *     process.stdout.write(d);
+node_modules\@types\node\index.d.ts:/// <reference path="child_process.d.ts" />
+node_modules\@types\node\index.d.ts:/// <reference path="process.d.ts" />
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\inspector.generated.d.ts:         * It is fired when the Node process finished all code execution and is
+node_modules\@types\node\module.d.ts:         * `process.env.NODE_COMPILE_CACHE` value to compile cache directory so the behavior can
+node_modules\@types\node\module.d.ts:         * It provides same features as launching Node.js process with commandline options
+node_modules\@types\node\module.d.ts:             * `true` when the current module is the entry point of the current process; `false` otherwise.
+node_modules\@types\node\module.d.ts:                 * Whether or not the module is done loading, or is in the process of
+node_modules\@types\node\module.d.ts:                 * entry point of the current process, or `undefined` if the module was loaded by
+node_modules\@types\node\module.d.ts:                 * process launched, or `undefined` if the entry point of the program is not a
+node_modules\@types\node\net.d.ts:         * This is `true` if the socket is not connected yet, either because `.connect()`has not yet been called or because it is still in the process of connecting
+node_modules\@types\node\net.d.ts:         * with `child_process.fork()`.
+node_modules\@types\node\net.d.ts:     * This allows connections to be passed between processes without any data being
+node_modules\@types\node\net.d.ts:     * read by the original process. To begin reading data from a paused socket, call `socket.resume()`.
+node_modules\@types\node\os.d.ts:     * `nice` values are POSIX-only. On Windows, the `nice` values of all processors
+node_modules\@types\node\os.d.ts:     * The return value is equivalent to [process.arch](https://nodejs.org/docs/latest-v22.x/api/process.html#processarch).
+node_modules\@types\node\os.d.ts:     * The return value is equivalent to `process.platform`.
+node_modules\@types\node\os.d.ts:     * Returns the scheduling priority for the process specified by `pid`. If `pid` is
+node_modules\@types\node\os.d.ts:     * not provided or is `0`, the priority of the current process is returned.
+node_modules\@types\node\os.d.ts:     * @param [pid=0] The process ID to retrieve scheduling priority for.
+node_modules\@types\node\os.d.ts:     * Attempts to set the scheduling priority for the process specified by `pid`. If `pid` is not provided or is `0`, the process ID of the current process is used.
+node_modules\@types\node\os.d.ts:     * priority classes, `priority` is mapped to one of six priority constants in `os.constants.priority`. When retrieving a process priority level, this range
+node_modules\@types\node\os.d.ts:     * @param [pid=0] The process ID to set scheduling priority for.
+node_modules\@types\node\os.d.ts:     * @param priority The scheduling priority to assign to the process.
+node_modules\@types\node\perf_hooks.d.ts: * doSomeLongRunningProcess(() => {
+node_modules\@types\node\perf_hooks.d.ts:         * Number of events that have been processed by the event handler.
+node_modules\@types\node\perf_hooks.d.ts:         * Number of events that were waiting to be processed when the event provider was called.
+node_modules\@types\node\perf_hooks.d.ts:         * The high resolution millisecond timestamp at which the Node.js process
+node_modules\@types\node\perf_hooks.d.ts:         * The high resolution millisecond timestamp at which the Node.js process was initialized.
+node_modules\@types\node\perf_hooks.d.ts:         * Returns the current high resolution millisecond timestamp, where 0 represents the start of the current `node` process.
+node_modules\@types\node\perf_hooks.d.ts:         * at which the current `node` process began, measured in Unix time.
+node_modules\@types\node\perf_hooks.d.ts:         * handshake process to secure the current connection.
+node_modules\@types\node\perf_hooks.d.ts:        const NODE_PERFORMANCE_GC_FLAGS_SYNCHRONOUS_PHANTOM_PROCESSING: number;
+node_modules\@types\node\process.d.ts:declare module "process" {
+node_modules\@types\node\process.d.ts:    import { Control, MessageOptions, SendHandle } from "node:child_process";
+node_modules\@types\node\process.d.ts:        "child_process": typeof import("child_process");
+node_modules\@types\node\process.d.ts:        "node:child_process": typeof import("node:child_process");
+node_modules\@types\node\process.d.ts:        "process": typeof import("process");
+node_modules\@types\node\process.d.ts:        "node:process": typeof import("node:process");
+node_modules\@types\node\process.d.ts:        var process: NodeJS.Process;
+node_modules\@types\node\process.d.ts:            // as the type for process.stdin, process.stdout, and process.stderr.
+node_modules\@types\node\process.d.ts:                 * The `process.memoryUsage()` method iterate over each page to gather informations about memory
+node_modules\@types\node\process.d.ts:                 * process, including all C++ and JavaScript objects and code.
+node_modules\@types\node\process.d.ts:            interface ProcessRelease {
+node_modules\@types\node\process.d.ts:            interface ProcessFeatures {
+node_modules\@types\node\process.d.ts:                 * This value is therefore identical to that of `process.features.tls`.
+node_modules\@types\node\process.d.ts:                 * @deprecated Use `process.features.tls` instead.
+node_modules\@types\node\process.d.ts:                 * This value is therefore identical to that of `process.features.tls`.
+node_modules\@types\node\process.d.ts:                 * @deprecated Use `process.features.tls` instead.
+node_modules\@types\node\process.d.ts:                 * This value is therefore identical to that of `process.features.tls`.
+node_modules\@types\node\process.d.ts:                 * @deprecated Use `process.features.tls` instead.
+node_modules\@types\node\process.d.ts:            interface ProcessVersions extends Dict<string> {
+node_modules\@types\node\process.d.ts:            interface ProcessEnv extends Dict<string> {
+node_modules\@types\node\process.d.ts:                 * This is the legacy version of {@link process.hrtime.bigint()}
+node_modules\@types\node\process.d.ts:                 * The `process.hrtime()` method returns the current high-resolution real time in a `[seconds, nanoseconds]` tuple `Array`,
+node_modules\@types\node\process.d.ts:                 * `time` is an optional parameter that must be the result of a previous `process.hrtime()` call to diff with the current time.
+node_modules\@types\node\process.d.ts:                 * Passing in a user-defined array instead of the result of a previous call to `process.hrtime()` will lead to undefined behavior.
+node_modules\@types\node\process.d.ts:                 * const { hrtime } = require('node:process');
+node_modules\@types\node\process.d.ts:                 * @legacy Use {@link process.hrtime.bigint()} instead.
+node_modules\@types\node\process.d.ts:                 * @param time The result of a previous call to `process.hrtime()`
+node_modules\@types\node\process.d.ts:                 * The `bigint` version of the {@link process.hrtime()} method returning the current high-resolution real time in nanoseconds as a `bigint`.
+node_modules\@types\node\process.d.ts:                 * Unlike {@link process.hrtime()}, it does not support an additional time argument since the difference can just be computed directly by subtraction of the two `bigint`s.
+node_modules\@types\node\process.d.ts:                 * import { hrtime } from 'node:process';
+node_modules\@types\node\process.d.ts:            interface ProcessPermission {
+node_modules\@types\node\process.d.ts:                 * Verifies that the process is able to access the given scope and reference.
+node_modules\@types\node\process.d.ts:                 * If no reference is provided, a global scope is assumed, for instance, `process.permission.has('fs.read')`
+node_modules\@types\node\process.d.ts:                 * will check if the process has ALL file system read permissions.
+node_modules\@types\node\process.d.ts:                 * * `child` - Child process spawning operations
+node_modules\@types\node\process.d.ts:                 * // Check if the process has permission to read the README file
+node_modules\@types\node\process.d.ts:                 * process.permission.has('fs.read', './README.md');
+node_modules\@types\node\process.d.ts:                 * // Check if the process has read permission operations
+node_modules\@types\node\process.d.ts:                 * process.permission.has('fs.read');
+node_modules\@types\node\process.d.ts:            interface ProcessReport {
+node_modules\@types\node\process.d.ts:                 * Write reports in a compact format, single-line JSON, more easily consumable by log processing systems
+node_modules\@types\node\process.d.ts:                 * working directory of the Node.js process.
+node_modules\@types\node\process.d.ts:                 * Returns a JavaScript Object representation of a diagnostic report for the running process.
+node_modules\@types\node\process.d.ts:                 * If true, a diagnostic report is generated when the process
+node_modules\@types\node\process.d.ts:                 * receives the signal specified by process.report.signal.
+node_modules\@types\node\process.d.ts:                 * to the stdout or stderr of the process respectively.
+node_modules\@types\node\process.d.ts:                 * `process.report.directory`, or the current working directory of the Node.js process,
+node_modules\@types\node\process.d.ts:                 * @default process.emitWarning
+node_modules\@types\node\process.d.ts:            interface ProcessConfig {
+node_modules\@types\node\process.d.ts:            interface Process extends EventEmitter {
+node_modules\@types\node\process.d.ts:                 * The `process.stdout` property returns a stream connected to`stdout` (fd `1`). It is a `net.Socket` (which is a `Duplex` stream) unless fd `1` refers to a file, in which case it is
+node_modules\@types\node\process.d.ts:                 * For example, to copy `process.stdin` to `process.stdout`:
+node_modules\@types\node\process.d.ts:                 * import { stdin, stdout } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * `process.stdout` differs from other Node.js streams in important ways. See `note on process I/O` for more information.
+node_modules\@types\node\process.d.ts:                 * The `process.stderr` property returns a stream connected to`stderr` (fd `2`). It is a `net.Socket` (which is a `Duplex` stream) unless fd `2` refers to a file, in which case it is
+node_modules\@types\node\process.d.ts:                 * `process.stderr` differs from other Node.js streams in important ways. See `note on process I/O` for more information.
+node_modules\@types\node\process.d.ts:                 * The `process.stdin` property returns a stream connected to`stdin` (fd `0`). It is a `net.Socket` (which is a `Duplex` stream) unless fd `0` refers to a file, in which case it is
+node_modules\@types\node\process.d.ts:                 * As a `Duplex` stream, `process.stdin` can also be used in "old" mode that
+node_modules\@types\node\process.d.ts:                 * must call `process.stdin.resume()` to read from it. Note also that calling `process.stdin.resume()` itself would switch stream to "old" mode.
+node_modules\@types\node\process.d.ts:                 * The `process.argv` property returns an array containing the command-line
+node_modules\@types\node\process.d.ts:                 * arguments passed when the Node.js process was launched. The first element will
+node_modules\@types\node\process.d.ts:                 * be {@link execPath}. See `process.argv0` if access to the original value
+node_modules\@types\node\process.d.ts:                 * For example, assuming the following script for `process-args.js`:
+node_modules\@types\node\process.d.ts:                 * import { argv } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * // print process.argv
+node_modules\@types\node\process.d.ts:                 * Launching the Node.js process as:
+node_modules\@types\node\process.d.ts:                 * node process-args.js one two=three four
+node_modules\@types\node\process.d.ts:                 * 1: /Users/mjr/work/node/process-args.js
+node_modules\@types\node\process.d.ts:                 * The `process.argv0` property stores a read-only copy of the original value of`argv[0]` passed when Node.js starts.
+node_modules\@types\node\process.d.ts:                 * > process.argv[0]
+node_modules\@types\node\process.d.ts:                 * > process.argv0
+node_modules\@types\node\process.d.ts:                 * The `process.execArgv` property returns the set of Node.js-specific command-line
+node_modules\@types\node\process.d.ts:                 * options passed when the Node.js process was launched. These options do not
+node_modules\@types\node\process.d.ts:                 * the script name. These options are useful in order to spawn child processes with
+node_modules\@types\node\process.d.ts:                 * Results in `process.execArgv`:
+node_modules\@types\node\process.d.ts:                 * And `process.argv`:
+node_modules\@types\node\process.d.ts:                 * The `process.execPath` property returns the absolute pathname of the executable
+node_modules\@types\node\process.d.ts:                 * that started the Node.js process. Symbolic links, if any, are resolved.
+node_modules\@types\node\process.d.ts:                 * The `process.abort()` method causes the Node.js process to exit immediately and
+node_modules\@types\node\process.d.ts:                 * The `process.chdir()` method changes the current working directory of the
+node_modules\@types\node\process.d.ts:                 * Node.js process or throws an exception if doing so fails (for instance, if
+node_modules\@types\node\process.d.ts:                 * import { chdir, cwd } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The `process.cwd()` method returns the current working directory of the Node.js
+node_modules\@types\node\process.d.ts:                 * process.
+node_modules\@types\node\process.d.ts:                 * import { cwd } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * process.debugPort = 5858;
+node_modules\@types\node\process.d.ts:                 * The `process.dlopen()` method allows dynamically loading shared objects. It is primarily used by `require()` to load C++ Addons, and
+node_modules\@types\node\process.d.ts:                 * should not be used directly, except in special cases. In other words, `require()` should be preferred over `process.dlopen()`
+node_modules\@types\node\process.d.ts:                 * An important requirement when calling `process.dlopen()` is that the `module` instance must be passed. Functions exported by the C++ Addon
+node_modules\@types\node\process.d.ts:                 * import { dlopen } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The `process.emitWarning()` method can be used to emit custom or application
+node_modules\@types\node\process.d.ts:                 * specific process warnings. These can be listened for by adding a handler to the `'warning'` event.
+node_modules\@types\node\process.d.ts:                 * import { emitWarning } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import { emitWarning } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import { emitWarning } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * In each of the previous examples, an `Error` object is generated internally by `process.emitWarning()` and passed through to the `'warning'` handler.
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * process.on('warning', (warning) => {
+node_modules\@types\node\process.d.ts:                 * import { emitWarning } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * While process warnings use `Error` objects, the process warning mechanism is not a replacement for normal error handling mechanisms.
+node_modules\@types\node\process.d.ts:                 * The `process.env` property returns an object containing the user environment.
+node_modules\@types\node\process.d.ts:                 * reflected outside the Node.js process, or (unless explicitly requested)
+node_modules\@types\node\process.d.ts:                 * node -e 'process.env.foo = "bar"' &#x26;&#x26; echo $foo
+node_modules\@types\node\process.d.ts:                 * import { env } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * Assigning a property on `process.env` will implicitly convert the value
+node_modules\@types\node\process.d.ts:                 * import { env } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * Use `delete` to delete a property from `process.env`.
+node_modules\@types\node\process.d.ts:                 * import { env } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import { env } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * each `Worker` thread has its own copy of `process.env`, based on its
+node_modules\@types\node\process.d.ts:                 * parent thread's `process.env`, or whatever was specified as the `env` option
+node_modules\@types\node\process.d.ts:                 * to the `Worker` constructor. Changes to `process.env` will not be visible
+node_modules\@types\node\process.d.ts:                 * are visible to the operating system or to native add-ons. On Windows, a copy of `process.env` on a `Worker` instance operates in a case-sensitive manner
+node_modules\@types\node\process.d.ts:                env: ProcessEnv;
+node_modules\@types\node\process.d.ts:                 * The `process.exit()` method instructs Node.js to terminate the process
+node_modules\@types\node\process.d.ts:                 * either the 'success' code `0` or the value of `process.exitCode` if it has been
+node_modules\@types\node\process.d.ts:                 * import { exit } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * Calling `process.exit()` will force the process to exit as quickly as possible
+node_modules\@types\node\process.d.ts:                 * completed fully, including I/O operations to `process.stdout` and `process.stderr`.
+node_modules\@types\node\process.d.ts:                 * In most situations, it is not actually necessary to call `process.exit()` explicitly. The Node.js process will exit on its own _if there is no additional_
+node_modules\@types\node\process.d.ts:                 * _work pending_ in the event loop. The `process.exitCode` property can be set to
+node_modules\@types\node\process.d.ts:                 * tell the process which exit code to use when the process exits gracefully.
+node_modules\@types\node\process.d.ts:                 * For instance, the following example illustrates a _misuse_ of the `process.exit()` method that could lead to data printed to stdout being
+node_modules\@types\node\process.d.ts:                 * import { exit } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The reason this is problematic is because writes to `process.stdout` in Node.js
+node_modules\@types\node\process.d.ts:                 * event loop. Calling `process.exit()`, however, forces the process to exit _before_ those additional writes to `stdout` can be performed.
+node_modules\@types\node\process.d.ts:                 * Rather than calling `process.exit()` directly, the code _should_ set the `process.exitCode` and allow the process to exit naturally by avoiding
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * // the process exit gracefully.
+node_modules\@types\node\process.d.ts:                 *   process.exitCode = 1;
+node_modules\@types\node\process.d.ts:                 * If it is necessary to terminate the Node.js process due to an error condition,
+node_modules\@types\node\process.d.ts:                 * throwing an _uncaught_ error and allowing the process to terminate accordingly
+node_modules\@types\node\process.d.ts:                 * is safer than calling `process.exit()`.
+node_modules\@types\node\process.d.ts:                 * than the current process.
+node_modules\@types\node\process.d.ts:                 * A number which will be the process exit code, when the process either
+node_modules\@types\node\process.d.ts:                 * previous setting of `process.exitCode`.
+node_modules\@types\node\process.d.ts:                     * This function registers a callback to be called when the process emits the `exit` event if the `ref` object was not garbage collected.
+node_modules\@types\node\process.d.ts:                     * If the object `ref` was garbage collected before the `exit` event is emitted, the callback will be removed from the finalization registry, and it will not be called on process exit.
+node_modules\@types\node\process.d.ts:                     * The idea of ​​this function is to help you free up resources when the starts process exiting, but also let the object be garbage collected if it is no longer being used.
+node_modules\@types\node\process.d.ts:                     * This function behaves exactly like the `register`, except that the callback will be called when the process emits the `beforeExit` event if `ref` object was not garbage collected.
+node_modules\@types\node\process.d.ts:                 * The `process.getActiveResourcesInfo()` method returns an array of strings containing
+node_modules\@types\node\process.d.ts:                 * import { getActiveResourcesInfo } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The `process.getgid()` method returns the numerical group identity of the
+node_modules\@types\node\process.d.ts:                 * process. (See [`getgid(2)`](http://man7.org/linux/man-pages/man2/getgid.2.html).)
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getgid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current gid: ${process.getgid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.setgid()` method sets the group identity of the process. (See [`setgid(2)`](http://man7.org/linux/man-pages/man2/setgid.2.html).) The `id` can be passed as either a
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getgid &#x26;&#x26; process.setgid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current gid: ${process.getgid()}`);
+node_modules\@types\node\process.d.ts:                 *     process.setgid(501);
+node_modules\@types\node\process.d.ts:                 *     console.log(`New gid: ${process.getgid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.getuid()` method returns the numeric user identity of the process.
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getuid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current uid: ${process.getuid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.setuid(id)` method sets the user identity of the process. (See [`setuid(2)`](http://man7.org/linux/man-pages/man2/setuid.2.html).) The `id` can be passed as either a
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getuid &#x26;&#x26; process.setuid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current uid: ${process.getuid()}`);
+node_modules\@types\node\process.d.ts:                 *     process.setuid(501);
+node_modules\@types\node\process.d.ts:                 *     console.log(`New uid: ${process.getuid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.geteuid()` method returns the numerical effective user identity of
+node_modules\@types\node\process.d.ts:                 * the process. (See [`geteuid(2)`](http://man7.org/linux/man-pages/man2/geteuid.2.html).)
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.geteuid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current uid: ${process.geteuid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.seteuid()` method sets the effective user identity of the process.
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.geteuid &#x26;&#x26; process.seteuid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current uid: ${process.geteuid()}`);
+node_modules\@types\node\process.d.ts:                 *     process.seteuid(501);
+node_modules\@types\node\process.d.ts:                 *     console.log(`New uid: ${process.geteuid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.getegid()` method returns the numerical effective group identity
+node_modules\@types\node\process.d.ts:                 * of the Node.js process. (See [`getegid(2)`](http://man7.org/linux/man-pages/man2/getegid.2.html).)
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getegid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current gid: ${process.getegid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.setegid()` method sets the effective group identity of the process.
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getegid &#x26;&#x26; process.setegid) {
+node_modules\@types\node\process.d.ts:                 *   console.log(`Current gid: ${process.getegid()}`);
+node_modules\@types\node\process.d.ts:                 *     process.setegid(501);
+node_modules\@types\node\process.d.ts:                 *     console.log(`New gid: ${process.getegid()}`);
+node_modules\@types\node\process.d.ts:                 * The `process.getgroups()` method returns an array with the supplementary group
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getgroups) {
+node_modules\@types\node\process.d.ts:                 *   console.log(process.getgroups()); // [ 16, 21, 297 ]
+node_modules\@types\node\process.d.ts:                 * The `process.setgroups()` method sets the supplementary group IDs for the
+node_modules\@types\node\process.d.ts:                 * Node.js process. This is a privileged operation that requires the Node.js
+node_modules\@types\node\process.d.ts:                 * process to have `root` or the `CAP_SETGID` capability.
+node_modules\@types\node\process.d.ts:                 * import process from 'node:process';
+node_modules\@types\node\process.d.ts:                 * if (process.getgroups &#x26;&#x26; process.setgroups) {
+node_modules\@types\node\process.d.ts:                 *     process.setgroups([501]);
+node_modules\@types\node\process.d.ts:                 *     console.log(process.getgroups()); // new groups
+node_modules\@types\node\process.d.ts:                 * The `process.setUncaughtExceptionCaptureCallback()` function sets a function
+node_modules\@types\node\process.d.ts:                 * command line or set through `v8.setFlagsFromString()`, the process will
+node_modules\@types\node\process.d.ts:                 * To unset the capture function, `process.setUncaughtExceptionCaptureCallback(null)` may be used. Calling this
+node_modules\@types\node\process.d.ts:                 * The `process.sourceMapsEnabled` property returns whether the [Source Map v3](https://sourcemaps.info/spec.html) support for stack traces is enabled.
+node_modules\@types\node\process.d.ts:                 * It provides same features as launching Node.js process with commandline options `--enable-source-maps`.
+node_modules\@types\node\process.d.ts:                 * The `process.version` property contains the Node.js version string.
+node_modules\@types\node\process.d.ts:                 * import { version } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * To get the version string without the prepended _v_, use`process.versions.node`.
+node_modules\@types\node\process.d.ts:                 * The `process.versions` property returns an object listing the version strings of
+node_modules\@types\node\process.d.ts:                 * Node.js and its dependencies. `process.versions.modules` indicates the current
+node_modules\@types\node\process.d.ts:                 * import { versions } from 'node:process';
+node_modules\@types\node\process.d.ts:                readonly versions: ProcessVersions;
+node_modules\@types\node\process.d.ts:                 * The `process.config` property returns a frozen `Object` containing the
+node_modules\@types\node\process.d.ts:                readonly config: ProcessConfig;
+node_modules\@types\node\process.d.ts:                 * The `process.kill()` method sends the `signal` to the process identified by`pid`.
+node_modules\@types\node\process.d.ts:                 * case, a signal of `0` can be used to test for the existence of a process.
+node_modules\@types\node\process.d.ts:                 * Windows platforms will throw an error if the `pid` is used to kill a process
+node_modules\@types\node\process.d.ts:                 * Even though the name of this function is `process.kill()`, it is really just a
+node_modules\@types\node\process.d.ts:                 * other than kill the target process.
+node_modules\@types\node\process.d.ts:                 * import process, { kill } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * process.on('SIGHUP', () => {
+node_modules\@types\node\process.d.ts:                 *   process.exit(0);
+node_modules\@types\node\process.d.ts:                 * kill(process.pid, 'SIGHUP');
+node_modules\@types\node\process.d.ts:                 * When `SIGUSR1` is received by a Node.js process, Node.js will start the
+node_modules\@types\node\process.d.ts:                 * @param pid A process ID
+node_modules\@types\node\process.d.ts:                 * Loads the environment configuration from a `.env` file into `process.env`. If
+node_modules\@types\node\process.d.ts:                 * import { loadEnvFile } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The `process.pid` property returns the PID of the process.
+node_modules\@types\node\process.d.ts:                 * import { pid } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * console.log(`This process is pid ${pid}`);
+node_modules\@types\node\process.d.ts:                 * The `process.ppid` property returns the PID of the parent of the
+node_modules\@types\node\process.d.ts:                 * current process.
+node_modules\@types\node\process.d.ts:                 * import { ppid } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * console.log(`The parent process is pid ${ppid}`);
+node_modules\@types\node\process.d.ts:                 * The `process.threadCpuUsage()` method returns the user and system CPU time usage of
+node_modules\@types\node\process.d.ts:                 * The result of a previous call to `process.threadCpuUsage()` can be passed as the
+node_modules\@types\node\process.d.ts:                 * `process.threadCpuUsage()`
+node_modules\@types\node\process.d.ts:                 * The `process.title` property returns the current process title (i.e. returns
+node_modules\@types\node\process.d.ts:                 * the current value of `ps`). Assigning a new value to `process.title` modifies
+node_modules\@types\node\process.d.ts:                 * For instance, on Linux and macOS, `process.title` is limited to the size of the
+node_modules\@types\node\process.d.ts:                 * binary name plus the length of the command-line arguments because setting the `process.title` overwrites the `argv` memory of the process. Node.js v0.8
+node_modules\@types\node\process.d.ts:                 * allowed for longer process title strings by also overwriting the `environ` memory but that was potentially insecure and confusing in some (rather obscure)
+node_modules\@types\node\process.d.ts:                 * Assigning a value to `process.title` might not result in an accurate label
+node_modules\@types\node\process.d.ts:                 * within process manager applications such as macOS Activity Monitor or Windows
+node_modules\@types\node\process.d.ts:                 * import { arch } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * console.log(`This processor architecture is ${arch}`);
+node_modules\@types\node\process.d.ts:                 * The `process.platform` property returns a string identifying the operating
+node_modules\@types\node\process.d.ts:                 * import { platform } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The `process.mainModule` property provides an alternative way of retrieving `require.main`. The difference is that if the main module changes at
+node_modules\@types\node\process.d.ts:                 * As with `require.main`, `process.mainModule` will be `undefined` if there
+node_modules\@types\node\process.d.ts:                 * Gets the amount of memory available to the process (in bytes) based on
+node_modules\@types\node\process.d.ts:                 * Gets the amount of free memory that is still available to the process (in bytes).
+node_modules\@types\node\process.d.ts:                 * See [`uv_get_available_memory`](https://nodejs.org/docs/latest-v22.x/api/process.html#processavailablememory) for more information.
+node_modules\@types\node\process.d.ts:                 * The `process.cpuUsage()` method returns the user and system CPU time usage of
+node_modules\@types\node\process.d.ts:                 * the current process, in an object with properties `user` and `system`, whose
+node_modules\@types\node\process.d.ts:                 * actual elapsed time if multiple CPU cores are performing work for this process.
+node_modules\@types\node\process.d.ts:                 * The result of a previous call to `process.cpuUsage()` can be passed as the
+node_modules\@types\node\process.d.ts:                 * import { cpuUsage } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * @param previousValue A previous return value from calling `process.cpuUsage()`
+node_modules\@types\node\process.d.ts:                 * `process.nextTick()` adds `callback` to the "next tick queue". This queue is
+node_modules\@types\node\process.d.ts:                 * create an infinite loop if one were to recursively call `process.nextTick()`.
+node_modules\@types\node\process.d.ts:                 * See the [Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#process-nexttick) guide for more background.
+node_modules\@types\node\process.d.ts:                 * import { nextTick } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import { nextTick } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * import { nextTick } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The process.noDeprecation property indicates whether the --no-deprecation flag is set on the current Node.js process.
+node_modules\@types\node\process.d.ts:                 * See the documentation for the ['warning' event](https://nodejs.org/docs/latest/api/process.html#event-warning) and the [emitWarning()](https://nodejs.org/docs/latest/api/process.html#processemitwarningwarning-type-code-ctor) method for more information about this flag's behavior.
+node_modules\@types\node\process.d.ts:                 * `process.permission` is an object whose methods are used to manage permissions for the current process.
+node_modules\@types\node\process.d.ts:                permission: ProcessPermission;
+node_modules\@types\node\process.d.ts:                 * The `process.release` property returns an `Object` containing metadata related
+node_modules\@types\node\process.d.ts:                 * `process.release` contains the following properties:
+node_modules\@types\node\process.d.ts:                readonly release: ProcessRelease;
+node_modules\@types\node\process.d.ts:                readonly features: ProcessFeatures;
+node_modules\@types\node\process.d.ts:                 * `process.umask()` returns the Node.js process's file mode creation mask. Child
+node_modules\@types\node\process.d.ts:                 * processes inherit the mask from the parent process.
+node_modules\@types\node\process.d.ts:                 * @deprecated Calling `process.umask()` with no argument causes the process-wide umask to be written twice. This introduces a race condition between threads, and is a potential
+node_modules\@types\node\process.d.ts:                 * The `process.uptime()` method returns the number of seconds the current Node.js
+node_modules\@types\node\process.d.ts:                 * process has been running.
+node_modules\@types\node\process.d.ts:                 * If the Node.js process was spawned with an IPC channel, the process.channel property is a reference to the IPC channel.
+node_modules\@types\node\process.d.ts:                 * If Node.js is spawned with an IPC channel, the `process.send()` method can be
+node_modules\@types\node\process.d.ts:                 * used to send messages to the parent process. Messages will be received as a `'message'` event on the parent's `ChildProcess` object.
+node_modules\@types\node\process.d.ts:                 * If Node.js was not spawned with an IPC channel, `process.send` will be `undefined`.
+node_modules\@types\node\process.d.ts:                 * If the Node.js process is spawned with an IPC channel (see the `Child Process` and `Cluster` documentation), the `process.disconnect()` method will close the
+node_modules\@types\node\process.d.ts:                 * IPC channel to the parent process, allowing the child process to exit gracefully
+node_modules\@types\node\process.d.ts:                 * The effect of calling `process.disconnect()` is the same as calling `ChildProcess.disconnect()` from the parent process.
+node_modules\@types\node\process.d.ts:                 * If the Node.js process was not spawned with an IPC channel, `process.disconnect()` will be `undefined`.
+node_modules\@types\node\process.d.ts:                 * If the Node.js process is spawned with an IPC channel (see the `Child Process` and `Cluster` documentation), the `process.connected` property will return `true` so long as the IPC
+node_modules\@types\node\process.d.ts:                 * channel is connected and will return `false` after `process.disconnect()` is called.
+node_modules\@types\node\process.d.ts:                 * Once `process.connected` is `false`, it is no longer possible to send messages
+node_modules\@types\node\process.d.ts:                 * over the IPC channel using `process.send()`.
+node_modules\@types\node\process.d.ts:                 * The `process.allowedNodeEnvironmentFlags` property is a special,
+node_modules\@types\node\process.d.ts:                 * `process.allowedNodeEnvironmentFlags` extends `Set`, but overrides `Set.prototype.has` to recognize several different possible flag
+node_modules\@types\node\process.d.ts:                 * representations. `process.allowedNodeEnvironmentFlags.has()` will
+node_modules\@types\node\process.d.ts:                 * When iterating over `process.allowedNodeEnvironmentFlags`, flags will
+node_modules\@types\node\process.d.ts:                 * import { allowedNodeEnvironmentFlags } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * The methods `add()`, `clear()`, and `delete()` of`process.allowedNodeEnvironmentFlags` do nothing, and will fail
+node_modules\@types\node\process.d.ts:                 * If Node.js was compiled _without_ `NODE_OPTIONS` support (shown in {@link config}), `process.allowedNodeEnvironmentFlags` will
+node_modules\@types\node\process.d.ts:                 * `process.report` is an object whose methods are used to generate diagnostic reports for the current process.
+node_modules\@types\node\process.d.ts:                report: ProcessReport;
+node_modules\@types\node\process.d.ts:                 * import { resourceUsage } from 'node:process';
+node_modules\@types\node\process.d.ts:                 * @return the resource usage for the current process. All of these values come from the `uv_getrusage` call which returns a [`uv_rusage_t` struct][uv_rusage_t].
+node_modules\@types\node\process.d.ts:                 * The initial value of `process.throwDeprecation` indicates whether the `--throw-deprecation` flag is set on the current Node.js process. `process.throwDeprecation`
+node_modules\@types\node\process.d.ts:                 * $ node --throw-deprecation -p "process.throwDeprecation"
+node_modules\@types\node\process.d.ts:                 * $ node -p "process.throwDeprecation"
+node_modules\@types\node\process.d.ts:                 * > process.emitWarning('test', 'DeprecationWarning');
+node_modules\@types\node\process.d.ts:                 * > process.throwDeprecation = true;
+node_modules\@types\node\process.d.ts:                 * > process.emitWarning('test', 'DeprecationWarning');
+node_modules\@types\node\process.d.ts:                 * The `process.traceDeprecation` property indicates whether the `--trace-deprecation` flag is set on the current Node.js process. See the
+node_modules\@types\node\process.d.ts:                 * Replaces the current process with a new process.
+node_modules\@types\node\process.d.ts:                 * resources from the current process are preserved, except for the standard input,
+node_modules\@types\node\process.d.ts:                 * All other resources are discarded by the system when the processes are swapped, without triggering
+node_modules\@types\node\process.d.ts:                 * **Default:** `process.env`.
+node_modules\@types\node\process.d.ts:                execve?(file: string, args?: readonly string[], env?: ProcessEnv): never;
+node_modules\@types\node\process.d.ts:    export = process;
+node_modules\@types\node\process.d.ts:declare module "node:process" {
+node_modules\@types\node\process.d.ts:    import process = require("process");
+node_modules\@types\node\process.d.ts:    export = process;
+node_modules\@types\node\readline\promises.d.ts:     *   input: process.stdin,
+node_modules\@types\node\readline\promises.d.ts:     *   output: process.stdout,
+node_modules\@types\node\readline\promises.d.ts:     * (`process.stdout` does this automatically when it is a TTY).
+node_modules\@types\node\readline.d.ts: * (such as [`process.stdin`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdin)) one line at a time.
+node_modules\@types\node\readline.d.ts: * import { stdin as input, stdout as output } from 'node:process';
+node_modules\@types\node\readline.d.ts:         * The current input data being processed by node.
+node_modules\@types\node\readline.d.ts:         * current value that has been processed thus far, prior to the `line` event
+node_modules\@types\node\readline.d.ts:         * const rl = readline.createInterface(process.stdin);
+node_modules\@types\node\readline.d.ts:         * process.stdin.on('keypress', (c, k) => {
+node_modules\@types\node\readline.d.ts:         * portion of the input string that will be modified as input is processed,
+node_modules\@types\node\readline.d.ts:     *   input: process.stdin,
+node_modules\@types\node\readline.d.ts:     *   output: process.stdout,
+node_modules\@types\node\readline.d.ts:     * (`process.stdout` does this automatically when it is a TTY).
+node_modules\@types\node\readline.d.ts:     * waiting for user input, call `process.stdin.unref()`.
+node_modules\@types\node\readline.d.ts:     * readline.emitKeypressEvents(process.stdin);
+node_modules\@types\node\readline.d.ts:     * if (process.stdin.isTTY)
+node_modules\@types\node\readline.d.ts:     *   process.stdin.setRawMode(true);
+node_modules\@types\node\readline.d.ts:     *   input: process.stdin,
+node_modules\@types\node\readline.d.ts:     *   output: process.stdout,
+node_modules\@types\node\readline.d.ts:     *   process.exit(0);
+node_modules\@types\node\readline.d.ts:     * async function processLineByLine() {
+node_modules\@types\node\readline.d.ts:     * processLineByLine();
+node_modules\@types\node\readline.d.ts:     * (async function processLineByLine() {
+node_modules\@types\node\readline.d.ts:     *       // Process the line.
+node_modules\@types\node\readline.d.ts:     *     console.log('File processed.');
+node_modules\@types\node\repl.d.ts:         * @default process.stdin
+node_modules\@types\node\repl.d.ts:         * @default process.stdout
+node_modules\@types\node\repl.d.ts:         * @param cmd The function to invoke when the command is processed.
+node_modules\@types\node\sea.d.ts: * echo 'console.log(`Hello, ${process.argv[2]}!`);' > hello.js
+node_modules\@types\node\sea.d.ts: * node -e "require('fs').copyFileSync(process.execPath, 'hello.exe')"
+node_modules\@types\node\sqlite.d.ts:     * The backed-up database can be used normally during the backup process. Mutations coming from the same connection - same
+node_modules\@types\node\sqlite.d.ts:     * the backup process to restart.
+node_modules\@types\node\sqlite.d.ts:         * The conflict handler is invoked with this constant when processing a DELETE or UPDATE change if a row with the required PRIMARY KEY fields is present in the database, but one or more other (non primary-key) fields modified by the update do not contain the expected "before" values.
+node_modules\@types\node\sqlite.d.ts:         * The conflict handler is invoked with this constant when processing a DELETE or UPDATE change if a row with the required PRIMARY KEY fields is not present in the database.
+node_modules\@types\node\sqlite.d.ts:         * This constant is passed to the conflict handler while processing an INSERT change if the operation would result in duplicate primary key values.
+node_modules\@types\node\stream\web.d.ts:         * The way in which the piping process behaves under various error
+node_modules\@types\node\stream\web.d.ts:         * returns a promise that fulfills when the piping process completes
+node_modules\@types\node\stream\web.d.ts:         * once this process completes, unless an error is encountered while
+node_modules\@types\node\stream.d.ts: * and [`process.stdout`](https://nodejs.org/docs/latest-v22.x/api/process.html#processstdout) are both stream instances.
+node_modules\@types\node\stream.d.ts:             * stream without actually processing any of that data:
+node_modules\@types\node\stream.d.ts:             * end the reading process by resetting the internal reading state of the stream.
+node_modules\@types\node\stream.d.ts:             * process of performing a read.
+node_modules\@types\node\stream.d.ts:             * This method is different from `for await...of` loops in that it can optionally process chunks concurrently.
+node_modules\@types\node\stream.d.ts:             *     process.nextTick(cb);
+node_modules\@types\node\stream.d.ts:             * to be processed. However, use of `writable.cork()` without implementing `writable._writev()` may have an adverse effect on throughput.
+node_modules\@types\node\stream.d.ts:             * of writes to a stream, defer calls to `writable.uncork()` using `process.nextTick()`. Doing so allows batching of all `writable.write()` calls that occur within a given Node.js event
+node_modules\@types\node\stream.d.ts:             * process.nextTick(() => stream.uncork());
+node_modules\@types\node\stream.d.ts:             * process.nextTick(() => {
+node_modules\@types\node\stream.d.ts:         *       await process(chunk);
+node_modules\@types\node\test.d.ts: * processed in one of three ways:
+node_modules\@types\node\test.d.ts: * If any tests fail, the process exit code is set to `1`.
+node_modules\@types\node\test.d.ts:         * machines or processes, ideal for large-scale executions across varied
+node_modules\@types\node\test.d.ts:         * import process from 'node:process';
+node_modules\@types\node\test.d.ts:         *   .pipe(process.stdout);
+node_modules\@types\node\test.d.ts:             * If a number is provided, then that many test processes would run in parallel, where each process corresponds to one test file.
+node_modules\@types\node\test.d.ts:             * Configures the test runner to exit the process once all known
+node_modules\@types\node\test.d.ts:             * Sets inspector port of test child process.
+node_modules\@types\node\test.d.ts:             * number. If a nullish value is provided, each process gets its own port,
+node_modules\@types\node\test.d.ts:             * incremented from the primary's `process.debugPort`. This option is ignored
+node_modules\@types\node\test.d.ts:             * if the `isolation` option is set to `'none'` as no child processes are
+node_modules\@types\node\test.d.ts:             * `'process'`, each test file is run in a separate child process. If set to
+node_modules\@types\node\test.d.ts:             * `'none'`, all test files run in the current process.
+node_modules\@types\node\test.d.ts:             * @default 'process'
+node_modules\@types\node\test.d.ts:            isolation?: "process" | "none" | undefined;
+node_modules\@types\node\test.d.ts:             * spawning the subprocesses. This option has no effect when `isolation` is `'none`'.
+node_modules\@types\node\test.d.ts:             * subprocesses. This option has no effect when `isolation` is `'none'`.
+node_modules\@types\node\test.d.ts:             * coverage does not reach the threshold specified, the process will exit with code `1`.
+node_modules\@types\node\test.d.ts:             * coverage does not reach the threshold specified, the process will exit with code `1`.
+node_modules\@types\node\test.d.ts:             * coverage does not reach the threshold specified, the process will exit with code `1`.
+node_modules\@types\node\test.d.ts:                     * the tests changed the working directory of the Node.js process.
+node_modules\@types\node\test.d.ts:         * `TestContext` objects in the current process. The methods from `node:assert`
+node_modules\@types\node\timers.d.ts:                 * running, the process may exit before the `Immediate` object's callback is
+node_modules\@types\node\timers.d.ts:                 * the process may exit before the `Timeout` object's callback is invoked. Calling
+node_modules\@types\node\timers.d.ts:         * queue is processed every event loop iteration. If an immediate timer is queued
+node_modules\@types\node\timers.d.ts:         * `callback` throws an exception, the `process` object `'uncaughtException'`
+node_modules\@types\node\timers.d.ts:         * the `process.nextTick()` queue, which is managed by Node.js. The
+node_modules\@types\node\timers.d.ts:         * `process.nextTick()` queue is always processed before the microtask queue
+node_modules\@types\node\tls.d.ts:         * sockets that have not completed the handshaking process. The value `null` will
+node_modules\@types\node\tls.d.ts:         * The `tlsSocket.renegotiate()` method initiates a TLS renegotiation process.
+node_modules\@types\node\tls.d.ts:         * and their processing can be delayed due to packet loss or reordering. However,
+node_modules\@types\node\tls.d.ts:         * a buffer or `null` to stop the negotiation process. Returned PSK must be
+node_modules\@types\node\tls.d.ts:         * If the return value is `null` the negotiation process will stop and an
+node_modules\@types\node\tls.d.ts:         * @returns Return `null` to stop the negotiation process. `psk` must be
+node_modules\@types\node\tls.d.ts:     *   process.stdin.pipe(socket);
+node_modules\@types\node\tls.d.ts:     *   process.stdin.resume();
+node_modules\@types\node\tls.d.ts:     * from `process.argv` as the default value of the `sessionIdContext` option, other
+node_modules\@types\node\trace_events.d.ts: * process.on('SIGINT', function onSigint() {
+node_modules\@types\node\trace_events.d.ts: *   process.exit(130);  // Or applicable exit code depending on OS and signal
+node_modules\@types\node\trace_events.d.ts: * as the one used by `process.hrtime()`.
+node_modules\@types\node\trace_events.d.ts: * unlike `process.hrtime()` which returns nanoseconds.
+node_modules\@types\node\ts5.6\index.d.ts:/// <reference path="../child_process.d.ts" />
+node_modules\@types\node\ts5.6\index.d.ts:/// <reference path="../process.d.ts" />
+node_modules\@types\node\tty.d.ts: * attached, `process.stdin` will, by default, be initialized as an instance of `tty.ReadStream` and both `process.stdout` and `process.stderr` will, by
+node_modules\@types\node\tty.d.ts: * the `process.stdout.isTTY` property is `true`:
+node_modules\@types\node\tty.d.ts: * $ node -p -e "Boolean(process.stdout.isTTY)"
+node_modules\@types\node\tty.d.ts: * $ node -p -e "Boolean(process.stdout.isTTY)" | cat
+node_modules\@types\node\tty.d.ts:     * Represents the readable side of a TTY. In normal circumstances `process.stdin` will be the only `tty.ReadStream` instance in a Node.js
+node_modules\@types\node\tty.d.ts:     * process and there should be no reason to create additional instances.
+node_modules\@types\node\tty.d.ts:         * This flag is always `false` when a process starts, even if the terminal is
+node_modules\@types\node\tty.d.ts:         * including modifiers. Additionally, all special processing of characters by the
+node_modules\@types\node\tty.d.ts:     * Represents the writable side of a TTY. In normal circumstances, `process.stdout` and `process.stderr` will be the only`tty.WriteStream` instances created for a Node.js process and there
+node_modules\@types\node\tty.d.ts:         * negatives. It depends on process information and the environment variables that
+node_modules\@types\node\tty.d.ts:         * @param [env=process.env] An object containing the environment variables to check. This enables simulating the usage of a specific terminal.
+node_modules\@types\node\tty.d.ts:         * process.stdout.hasColors();
+node_modules\@types\node\tty.d.ts:         * process.stdout.hasColors(256);
+node_modules\@types\node\tty.d.ts:         * process.stdout.hasColors({ TMUX: '1' });
+node_modules\@types\node\tty.d.ts:         * process.stdout.hasColors(2 ** 24, { TMUX: '1' });
+node_modules\@types\node\tty.d.ts:         * @param [env=process.env] An object containing the environment variables to check. This enables simulating the usage of a specific terminal.
+node_modules\@types\node\url.d.ts:     * The formatting process operates as follows:
+node_modules\@types\node\url.d.ts:     * The formatting process operates as follows:
+node_modules\@types\node\util.d.ts:     * where `3245` is the process id. If it is not run with that
+node_modules\@types\node\util.d.ts:     * used, or if the `process.noDeprecation` property is set to `true` _prior_ to
+node_modules\@types\node\util.d.ts:     * or the `process.traceDeprecation` property is set to `true`, a warning and a
+node_modules\@types\node\util.d.ts:     * `process.throwDeprecation` property is set to `true`, then an exception will be
+node_modules\@types\node\util.d.ts:     * The `--throw-deprecation` command-line flag and `process.throwDeprecation`
+node_modules\@types\node\util.d.ts:     * `process.traceDeprecation`.
+node_modules\@types\node\util.d.ts:     * If the callback throws, the process will emit an `'uncaughtException'`
+node_modules\@types\node\util.d.ts:         * @default process.stdout
+node_modules\@types\node\util.d.ts:     * import { stderr } from 'node:process';
+node_modules\@types\node\util.d.ts:     *   // Validate if process.stderr has TTY
+node_modules\@types\node\util.d.ts:     * with `process.argv` directly. Takes a specification for the expected arguments
+node_modules\@types\node\util.d.ts:         * from adding additional checks through to reprocessing the tokens in different ways.
+node_modules\@types\node\util.d.ts:         * to customize the serialization process of the MIME.
+node_modules\@types\node\v8.d.ts:     * terminating the process.
+node_modules\@types\node\v8.d.ts:     * stream.pipe(process.stdout);
+node_modules\@types\node\v8.d.ts:     * terminating the process.
+node_modules\@types\node\v8.d.ts:     * generated, where `{pid}` will be the PID of the Node.js process, `{thread_id}` will be `0` when `writeHeapSnapshot()` is called from the main Node.js thread or the id of a
+node_modules\@types\node\v8.d.ts:     * times during the lifetime of the process. Each time the execution counter will
+node_modules\@types\node\v8.d.ts:     * When the process is about to exit, one last coverage will still be written to
+node_modules\@types\node\v8.d.ts:     * disk unless {@link stopCoverage} is invoked before the process exits.
+node_modules\@types\node\v8.d.ts:     * # This launches a process with the snapshot
+node_modules\@types\node\v8.d.ts:     *   // process.env and process.argv are refreshed during snapshot
+node_modules\@types\node\v8.d.ts:     *   const lang = process.env.BOOK_LANG || 'en_US';
+node_modules\@types\node\v8.d.ts:     *   const book = process.argv[1];
+node_modules\@types\node\v8.d.ts:     * The resulted binary will get print the data deserialized from the snapshot during start up, using the refreshed `process.env` and `process.argv` of the launched process:
+node_modules\@types\node\vm.d.ts:         * Existing handlers for the event that have been attached via `process.on('SIGINT')` will be disabled during script execution, but will continue to work after that.
+node_modules\@types\node\wasi.d.ts: * import { argv, env } from 'node:process';
+node_modules\@types\node\wasi.d.ts:         * An object similar to `process.env` that the WebAssembly
+node_modules\@types\node\wasi.d.ts:         * `wasi.start()` will return with the exit code specified rather than terminatng the process.
+node_modules\@types\node\wasi.d.ts:         * Setting this option to `false` will cause the Node.js process to exit with
+node_modules\@types\node\worker_threads.d.ts: * Unlike `child_process` or `cluster`, `worker_threads` can share memory. They do
+node_modules\@types\node\worker_threads.d.ts: * Worker threads inherit non-process-specific options by default. Refer to `Worker constructor options` to know how to customize worker thread options,
+node_modules\@types\node\worker_threads.d.ts:         * anymore (even if they are not contained in `value`). Unlike with `child processes`, transferring handles such as network sockets is currently
+node_modules\@types\node\worker_threads.d.ts:         * `process.argv` in the worker. This is mostly similar to the `workerData`
+node_modules\@types\node\worker_threads.d.ts:         * but the values will be available on the global `process.argv` as if they
+node_modules\@types\node\worker_threads.d.ts:     * * The `process.stdin`, `process.stdout`, and `process.stderr` streams may be redirected by the parent thread.
+node_modules\@types\node\worker_threads.d.ts:     * * `process.exit()` does not stop the whole program, just the single thread,
+node_modules\@types\node\worker_threads.d.ts:     * and `process.abort()` is not available.
+node_modules\@types\node\worker_threads.d.ts:     * * `process.chdir()` and `process` methods that set group or user ids
+node_modules\@types\node\worker_threads.d.ts:     * * `process.env` is a copy of the parent thread's environment variables,
+node_modules\@types\node\worker_threads.d.ts:     * * `process.title` cannot be modified.
+node_modules\@types\node\worker_threads.d.ts:     * * Signals are not delivered through `process.on('...')`.
+node_modules\@types\node\worker_threads.d.ts:     * * IPC channels from parent processes are not accessible.
+node_modules\@types\node\worker_threads.d.ts:         * the worker thread as `process.stdin`.
+node_modules\@types\node\worker_threads.d.ts:         * This is a readable stream which contains data written to `process.stdout` inside the worker thread. If `stdout: true` was not passed to the `Worker` constructor, then data is piped to the
+node_modules\@types\node\worker_threads.d.ts:         * parent thread's `process.stdout` stream.
+node_modules\@types\node\worker_threads.d.ts:         * This is a readable stream which contains data written to `process.stderr` inside the worker thread. If `stderr: true` was not passed to the `Worker` constructor, then data is piped to the
+node_modules\@types\node\worker_threads.d.ts:         * parent thread's `process.stderr` stream.
+node_modules\@types\node\worker_threads.d.ts:         * This value is unique for each `Worker` instance inside a single process.
+node_modules\@types\node\worker_threads.d.ts:         * This method returns a `Promise` that will resolve to an object identical to `process.threadCpuUsage()`,
+node_modules\@types\node\zlib.d.ts: *     process.exitCode = 1;
+node_modules\@types\node\zlib.d.ts: *     process.exitCode = 1;
+node_modules\@types\node\zlib.d.ts: *     process.exitCode = 1;
+node_modules\@types\node\zlib.d.ts: *     process.exitCode = 1;
+node_modules\@types\node\zlib.d.ts: *     process.exitCode = 1;
+node_modules\@types\node\zlib.d.ts:         * @default constants.BROTLI_OPERATION_PROCESS
+node_modules\@types\node\zlib.d.ts:        const BROTLI_OPERATION_PROCESS: number;
+node_modules\browserslist\index.d.ts:     * Path to processed file. It will be used to find config files.
+node_modules\browserslist\index.d.ts:     * Processing environment. It will be used to take right queries
+node_modules\browserslist\index.d.ts:   *   file: process.cwd()
+node_modules\browserslist\index.d.ts:    interface ProcessEnv {
+node_modules\esbuild\lib\main.d.ts:// Call this function to terminate esbuild's child process. The child process
+node_modules\esbuild\lib\main.d.ts:// In node this happens automatically before the parent node process exits. So
+node_modules\esbuild\lib\main.d.ts:// Unlike node, Deno lacks the necessary APIs to clean up child processes
+node_modules\esbuild\lib\main.d.ts:// within a Deno test. Deno fails tests that create a child process without
+node_modules\foreground-child\dist\commonjs\index.d.ts:import { ChildProcessByStdio, SpawnOptions, ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\commonjs\index.d.ts: * Arguments indicate the exit status of the child process.
+node_modules\foreground-child\dist\commonjs\index.d.ts: * If a Promise is returned, then the process is not terminated
+node_modules\foreground-child\dist\commonjs\index.d.ts: * If a number is returned, then the parent process exits with the number
+node_modules\foreground-child\dist\commonjs\index.d.ts: * If a signal string is returned, then the parent process is killed with
+node_modules\foreground-child\dist\commonjs\index.d.ts:export type Cleanup = (code: number | null, signal: null | NodeJS.Signals, processInfo: {
+node_modules\foreground-child\dist\commonjs\index.d.ts:    watchdogPid?: ChildProcess['pid'];
+node_modules\foreground-child\dist\commonjs\index.d.ts: * Spawn the specified program as a "foreground" process, or at least as
+node_modules\foreground-child\dist\commonjs\index.d.ts:export declare function foregroundChild(cmd: string | [cmd: string, ...args: string[]], cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\commonjs\index.d.ts:export declare function foregroundChild(program: string, args?: string[], cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\commonjs\index.d.ts:export declare function foregroundChild(program: string, spawnOpts?: SpawnOptions, cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\commonjs\index.d.ts:export declare function foregroundChild(program: string, args?: string[], spawnOpts?: SpawnOptions, cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\commonjs\proxy-signals.d.ts:import { type ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\commonjs\proxy-signals.d.ts:export declare const proxySignals: (child: ChildProcess) => () => void;
+node_modules\foreground-child\dist\commonjs\watchdog.d.ts:import { ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\commonjs\watchdog.d.ts: * Pass in a ChildProcess, and this will spawn a watchdog process that
+node_modules\foreground-child\dist\commonjs\watchdog.d.ts: * dangling detached zombie processes.
+node_modules\foreground-child\dist\commonjs\watchdog.d.ts:export declare const watchdog: (child: ChildProcess) => ChildProcess;
+node_modules\foreground-child\dist\esm\index.d.ts:import { ChildProcessByStdio, SpawnOptions, ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\esm\index.d.ts: * Arguments indicate the exit status of the child process.
+node_modules\foreground-child\dist\esm\index.d.ts: * If a Promise is returned, then the process is not terminated
+node_modules\foreground-child\dist\esm\index.d.ts: * If a number is returned, then the parent process exits with the number
+node_modules\foreground-child\dist\esm\index.d.ts: * If a signal string is returned, then the parent process is killed with
+node_modules\foreground-child\dist\esm\index.d.ts:export type Cleanup = (code: number | null, signal: null | NodeJS.Signals, processInfo: {
+node_modules\foreground-child\dist\esm\index.d.ts:    watchdogPid?: ChildProcess['pid'];
+node_modules\foreground-child\dist\esm\index.d.ts: * Spawn the specified program as a "foreground" process, or at least as
+node_modules\foreground-child\dist\esm\index.d.ts:export declare function foregroundChild(cmd: string | [cmd: string, ...args: string[]], cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\esm\index.d.ts:export declare function foregroundChild(program: string, args?: string[], cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\esm\index.d.ts:export declare function foregroundChild(program: string, spawnOpts?: SpawnOptions, cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\esm\index.d.ts:export declare function foregroundChild(program: string, args?: string[], spawnOpts?: SpawnOptions, cleanup?: Cleanup): ChildProcessByStdio<null, null, null>;
+node_modules\foreground-child\dist\esm\proxy-signals.d.ts:import { type ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\esm\proxy-signals.d.ts:export declare const proxySignals: (child: ChildProcess) => () => void;
+node_modules\foreground-child\dist\esm\watchdog.d.ts:import { ChildProcess } from 'child_process';
+node_modules\foreground-child\dist\esm\watchdog.d.ts: * Pass in a ChildProcess, and this will spawn a watchdog process that
+node_modules\foreground-child\dist\esm\watchdog.d.ts: * dangling detached zombie processes.
+node_modules\foreground-child\dist\esm\watchdog.d.ts:export declare const watchdog: (child: ChildProcess) => ChildProcess;
+node_modules\gaxios\build\cjs\src\common.d.ts:     * Available via `process.env.HTTP_PROXY` and `process.env.HTTPS_PROXY` as well - with a preference for the this config option when multiple are available.
+node_modules\gaxios\build\cjs\src\common.d.ts:     * Available via `process.env.NO_PROXY` as well as a common-separated list of strings - merged with any local `noProxy` rules.
+node_modules\gaxios\build\esm\src\common.d.ts:     * Available via `process.env.HTTP_PROXY` and `process.env.HTTPS_PROXY` as well - with a preference for the this config option when multiple are available.
+node_modules\gaxios\build\esm\src\common.d.ts:     * Available via `process.env.NO_PROXY` as well as a common-separated list of strings - merged with any local `noProxy` rules.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * Determines if the process is running on a Google Cloud Serverless environment (Cloud Run or Cloud Functions instance).
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * @returns {boolean} `true` if the process is running on GCP serverless, `false` otherwise.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * Determines if the process is running on a Linux Google Compute Engine instance.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * @returns {boolean} `true` if the process is running on Linux GCE, `false` otherwise.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * Determines if the process is running on a Google Compute Engine instance with a known
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * @returns {boolean} `true` if the process is running on GCE (as determined by MAC address), `false` otherwise.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * Determines if the process is running on a Google Compute Engine instance.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * @returns {boolean} `true` if the process is running on GCE, `false` otherwise.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * Determines if the process is running on Google Cloud Platform.
+node_modules\gcp-metadata\build\src\gcp-residency.d.ts: * @returns {boolean} `true` if the process is running on GCP, `false` otherwise.
+node_modules\gcp-metadata\build\src\index.d.ts: * Available via `process.env.METADATA_SERVER_DETECTION`.
+node_modules\glob\dist\commonjs\glob.d.ts:     * `process.cwd()`.
+node_modules\glob\dist\commonjs\glob.d.ts:     * Defaults to value of `process.platform` if available, or `'linux'` if
+node_modules\glob\dist\commonjs\ignore.d.ts: * Class used to process ignored patterns
+node_modules\glob\dist\commonjs\processor.d.ts: * A cache of which patterns have been processed for a given Path
+node_modules\glob\dist\commonjs\processor.d.ts: * A collection of patterns that must be processed in a subsequent step
+node_modules\glob\dist\commonjs\processor.d.ts: * The class that processes patterns for a given path.
+node_modules\glob\dist\commonjs\processor.d.ts:export declare class Processor {
+node_modules\glob\dist\commonjs\processor.d.ts:    processPatterns(target: Path, patterns: Pattern[]): this;
+node_modules\glob\dist\commonjs\processor.d.ts:    child(): Processor;
+node_modules\glob\dist\commonjs\processor.d.ts:    filterEntries(parent: Path, entries: Path[]): Processor;
+node_modules\glob\dist\commonjs\processor.d.ts://# sourceMappingURL=processor.d.ts.mapnode_modules\glob\dist\commonjs\walker.d.ts:import { Processor } from './processor.js';
+node_modules\glob\dist\commonjs\walker.d.ts:    walkCB2(target: Path, patterns: Pattern[], processor: Processor, cb: () => any): any;
+node_modules\glob\dist\commonjs\walker.d.ts:    walkCB3(target: Path, entries: Path[], processor: Processor, cb: () => any): void;
+node_modules\glob\dist\commonjs\walker.d.ts:    walkCB2Sync(target: Path, patterns: Pattern[], processor: Processor, cb: () => any): any;
+node_modules\glob\dist\commonjs\walker.d.ts:    walkCB3Sync(target: Path, entries: Path[], processor: Processor, cb: () => any): void;
+node_modules\glob\dist\esm\glob.d.ts:     * `process.cwd()`.
+node_modules\glob\dist\esm\glob.d.ts:     * Defaults to value of `process.platform` if available, or `'linux'` if
+node_modules\glob\dist\esm\ignore.d.ts: * Class used to process ignored patterns
+node_modules\glob\dist\esm\processor.d.ts: * A cache of which patterns have been processed for a given Path
+node_modules\glob\dist\esm\processor.d.ts: * A collection of patterns that must be processed in a subsequent step
+node_modules\glob\dist\esm\processor.d.ts: * The class that processes patterns for a given path.
+node_modules\glob\dist\esm\processor.d.ts:export declare class Processor {
+node_modules\glob\dist\esm\processor.d.ts:    processPatterns(target: Path, patterns: Pattern[]): this;
+node_modules\glob\dist\esm\processor.d.ts:    child(): Processor;
+node_modules\glob\dist\esm\processor.d.ts:    filterEntries(parent: Path, entries: Path[]): Processor;
+node_modules\glob\dist\esm\processor.d.ts://# sourceMappingURL=processor.d.ts.mapnode_modules\glob\dist\esm\walker.d.ts:import { Processor } from './processor.js';
+node_modules\glob\dist\esm\walker.d.ts:    walkCB2(target: Path, patterns: Pattern[], processor: Processor, cb: () => any): any;
+node_modules\glob\dist\esm\walker.d.ts:    walkCB3(target: Path, entries: Path[], processor: Processor, cb: () => any): void;
+node_modules\glob\dist\esm\walker.d.ts:    walkCB2Sync(target: Path, patterns: Pattern[], processor: Processor, cb: () => any): any;
+node_modules\glob\dist\esm\walker.d.ts:    walkCB3Sync(target: Path, entries: Path[], processor: Processor, cb: () => any): void;
+node_modules\google-auth-library\build\src\auth\awsrequestsigner.d.ts: * signing process.
+node_modules\google-auth-library\build\src\auth\awsrequestsigner.d.ts:     * requests to AWS APIs based on the AWS Signature Version 4 signing process.
+node_modules\google-auth-library\build\src\auth\baseexternalclient.d.ts:     * Authenticates the provided HTTP request, processes it and resolves with the
+node_modules\google-auth-library\build\src\auth\downscopedclient.d.ts:     * Authenticates the provided HTTP request, processes it and resolves with the
+node_modules\google-auth-library\build\src\auth\externalAccountAuthorizedUserClient.d.ts:     * Authenticates the provided HTTP request, processes it and resolves with the
+node_modules\google-auth-library\build\src\auth\oauth2client.d.ts:     * The hd (hosted domain) parameter streamlines the login process for G Suite
+node_modules\google-auth-library\build\src\auth\oauth2client.d.ts:    private processAndValidateRefreshHandler;
+node_modules\google-auth-library\build\src\auth\oauth2common.d.ts:     * body but does not process the request.
+node_modules\google-logging-utils\build\src\colours.d.ts:     * @param stream The stream (e.g. process.stderr)
+node_modules\jackspeak\dist\commonjs\index.d.ts:     * Environment object to read/write. Defaults `process.env`.
+node_modules\jackspeak\dist\esm\index.d.ts:     * Environment object to read/write. Defaults `process.env`.
+node_modules\json5\lib\stringify.d.ts:     * A function that alters the behavior of the stringification process, or an
+node_modules\json5\lib\stringify.d.ts: * process. If this value is null or not provided, all properties of the object
+node_modules\minimatch\dist\commonjs\index.d.ts:    preprocess(globParts: string[][]): string[][];
+node_modules\minimatch\dist\commonjs\index.d.ts:    firstPhasePreProcess(globParts: string[][]): string[][];
+node_modules\minimatch\dist\commonjs\index.d.ts:    secondPhasePreProcess(globParts: string[][]): string[][];
+node_modules\minimatch\dist\esm\index.d.ts:    preprocess(globParts: string[][]): string[][];
+node_modules\minimatch\dist\esm\index.d.ts:    firstPhasePreProcess(globParts: string[][]): string[][];
+node_modules\minimatch\dist\esm\index.d.ts:    secondPhasePreProcess(globParts: string[][]): string[][];
+node_modules\minipass\dist\commonjs\index.d.ts:     * buffer without any processing. Otherwise, it will be turned into a
+node_modules\minipass\dist\commonjs\index.d.ts:     * Buffer object for processing into the desired encoding.
+node_modules\minipass\dist\commonjs\index.d.ts:     * base class, a chunk is considered "processed" once it is accepted
+node_modules\minipass\dist\commonjs\index.d.ts:     * classes can override this function to do whatever processing is required
+node_modules\minipass\dist\commonjs\index.d.ts:     * and call `super.write(...)` only once processing is completed.
+node_modules\minipass\dist\esm\index.d.ts:     * buffer without any processing. Otherwise, it will be turned into a
+node_modules\minipass\dist\esm\index.d.ts:     * Buffer object for processing into the desired encoding.
+node_modules\minipass\dist\esm\index.d.ts:     * base class, a chunk is considered "processed" once it is accepted
+node_modules\minipass\dist\esm\index.d.ts:     * classes can override this function to do whatever processing is required
+node_modules\minipass\dist\esm\index.d.ts:     * and call `super.write(...)` only once processing is completed.
+node_modules\path-key\index.d.ts:		Use a custom environment variables object. Default: [`process.env`](https://nodejs.org/api/process.html#process_process_env).
+node_modules\path-key\index.d.ts:		Get the PATH key for a specific platform. Default: [`process.platform`](https://nodejs.org/api/process.html#process_process_platform).
+node_modules\path-key\index.d.ts:	const PATH = process.env[key];
+node_modules\path-scurry\node_modules\lru-cache\dist\commonjs\index.d.ts:         * - inflight: there is another fetch() for this key which is in process
+node_modules\path-scurry\node_modules\lru-cache\dist\commonjs\index.d.ts:         * cached value or `undefined`, and will continue to process and eventually
+node_modules\path-scurry\node_modules\lru-cache\dist\esm\index.d.ts:         * - inflight: there is another fetch() for this key which is in process
+node_modules\path-scurry\node_modules\lru-cache\dist\esm\index.d.ts:         * cached value or `undefined`, and will continue to process and eventually
+node_modules\postcss\lib\css-syntax-error.d.ts:   *              color support by `process.stdout.isTTY`
+node_modules\postcss\lib\css-syntax-error.d.ts:   *              and `process.env.NODE_DISABLE_COLORS`.
+node_modules\postcss\lib\document.d.ts:import { ProcessOptions } from './postcss.js'
+node_modules\postcss\lib\document.d.ts:  toResult(options?: ProcessOptions): Result
+node_modules\postcss\lib\input.d.ts:import { CssSyntaxError, ProcessOptions } from './postcss.js'
+node_modules\postcss\lib\input.d.ts:   * @param opts Process options.
+node_modules\postcss\lib\input.d.ts:  constructor(css: string, opts?: ProcessOptions)
+node_modules\postcss\lib\lazy-result.d.ts:import Processor from './processor.js'
+node_modules\postcss\lib\lazy-result.d.ts: * A `LazyResult` instance is returned by `Processor#process`.
+node_modules\postcss\lib\lazy-result.d.ts: * const lazy = postcss([autoprefixer]).process(css)
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous and asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * postcss([autoprefixer]).process(css).then(result => {
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous and asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * postcss([autoprefixer]).process(css).finally(() => {
+node_modules\postcss\lib\lazy-result.d.ts:   *   console.log('processing ended')
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous and asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * postcss([autoprefixer]).process(css, { from: cssPath }).then(result => {
+node_modules\postcss\lib\lazy-result.d.ts:   * If the processor contains any asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous plugins, converts `Root`
+node_modules\postcss\lib\lazy-result.d.ts:   * If the processor contains any asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * If the processor contains any asynchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * This property will only work with synchronous plugins. If the processor
+node_modules\postcss\lib\lazy-result.d.ts:   * Options from the `Processor#process` call.
+node_modules\postcss\lib\lazy-result.d.ts:   * Returns a `Processor` instance, which will be used
+node_modules\postcss\lib\lazy-result.d.ts:  get processor(): Processor
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous plugins
+node_modules\postcss\lib\lazy-result.d.ts:   * This property will only work with synchronous plugins. If the processor
+node_modules\postcss\lib\lazy-result.d.ts:   * @param processor Processor used for this transformation.
+node_modules\postcss\lib\lazy-result.d.ts:   * @param opts      Options from the `Processor#process` or `Root#toResult`.
+node_modules\postcss\lib\lazy-result.d.ts:  constructor(processor: Processor, css: string, opts: ResultOptions)
+node_modules\postcss\lib\lazy-result.d.ts:   * Processes input CSS through synchronous plugins
+node_modules\postcss\lib\no-work-result.d.ts:import Processor from './processor.js'
+node_modules\postcss\lib\no-work-result.d.ts: * A `NoWork` instance is returned by `Processor#process` ONLY when no plugins defined.
+node_modules\postcss\lib\no-work-result.d.ts: * const noWorkResult = postcss().process(css) // No plugins are defined.
+node_modules\postcss\lib\no-work-result.d.ts:  get processor(): Processor
+node_modules\postcss\lib\no-work-result.d.ts:  constructor(processor: Processor, css: string, opts: ResultOptions)
+node_modules\postcss\lib\node.d.ts:   * indicates to the LazyResult processor that the {@link Root} has been
+node_modules\postcss\lib\node.d.ts:   * modified by the current plugin and may need to be processed again by other
+node_modules\postcss\lib\postcss.d.ts:import Processor from './processor.js'
+node_modules\postcss\lib\postcss.d.ts:type DocumentProcessor = (
+node_modules\postcss\lib\postcss.d.ts:type RootProcessor = (
+node_modules\postcss\lib\postcss.d.ts:type DeclarationProcessor = (
+node_modules\postcss\lib\postcss.d.ts:type RuleProcessor = (
+node_modules\postcss\lib\postcss.d.ts:type AtRuleProcessor = (
+node_modules\postcss\lib\postcss.d.ts:type CommentProcessor = (
+node_modules\postcss\lib\postcss.d.ts:interface Processors {
+node_modules\postcss\lib\postcss.d.ts:  AtRule?: { [name: string]: AtRuleProcessor } | AtRuleProcessor
+node_modules\postcss\lib\postcss.d.ts:   * Will be called on all `AtRule` nodes, when all children will be processed.
+node_modules\postcss\lib\postcss.d.ts:  AtRuleExit?: { [name: string]: AtRuleProcessor } | AtRuleProcessor
+node_modules\postcss\lib\postcss.d.ts:  Comment?: CommentProcessor
+node_modules\postcss\lib\postcss.d.ts:  CommentExit?: CommentProcessor
+node_modules\postcss\lib\postcss.d.ts:  Declaration?: { [prop: string]: DeclarationProcessor } | DeclarationProcessor
+node_modules\postcss\lib\postcss.d.ts:    | { [prop: string]: DeclarationProcessor }
+node_modules\postcss\lib\postcss.d.ts:    | DeclarationProcessor
+node_modules\postcss\lib\postcss.d.ts:  Document?: DocumentProcessor
+node_modules\postcss\lib\postcss.d.ts:   * Will be called on `Document` node, when all children will be processed.
+node_modules\postcss\lib\postcss.d.ts:  DocumentExit?: DocumentProcessor
+node_modules\postcss\lib\postcss.d.ts:  Once?: RootProcessor
+node_modules\postcss\lib\postcss.d.ts:   * Will be called on `Root` node once, when all children will be processed.
+node_modules\postcss\lib\postcss.d.ts:  OnceExit?: RootProcessor
+node_modules\postcss\lib\postcss.d.ts:  Root?: RootProcessor
+node_modules\postcss\lib\postcss.d.ts:   * Will be called on `Root` node, when all children will be processed.
+node_modules\postcss\lib\postcss.d.ts:  RootExit?: RootProcessor
+node_modules\postcss\lib\postcss.d.ts:  Rule?: RuleProcessor
+node_modules\postcss\lib\postcss.d.ts:   * Will be called on all `Rule` nodes, when all children will be processed.
+node_modules\postcss\lib\postcss.d.ts:  RuleExit?: RuleProcessor
+node_modules\postcss\lib\postcss.d.ts:    Processor,
+node_modules\postcss\lib\postcss.d.ts:  export interface Plugin extends Processors {
+node_modules\postcss\lib\postcss.d.ts:    prepare?: (result: Result) => Processors
+node_modules\postcss\lib\postcss.d.ts:    (opts?: PluginOptions): Plugin | Processor
+node_modules\postcss\lib\postcss.d.ts:        postcss: Processor | TransformCallback
+node_modules\postcss\lib\postcss.d.ts:    | Processor
+node_modules\postcss\lib\postcss.d.ts:      opts?: Pick<ProcessOptions, 'document' | 'from' | 'map'>
+node_modules\postcss\lib\postcss.d.ts:     * Source map content from a previous processing step (e.g., Sass).
+node_modules\postcss\lib\postcss.d.ts:  export interface ProcessOptions<RootNode = Document | Root> {
+node_modules\postcss\lib\postcss.d.ts: * Create a new `Processor` instance that will apply `plugins`
+node_modules\postcss\lib\postcss.d.ts: * as CSS processors.
+node_modules\postcss\lib\postcss.d.ts: * postcss(plugins).process(css, { from, to }).then(result => {
+node_modules\postcss\lib\postcss.d.ts: * @return Processor to process multiple CSS.
+node_modules\postcss\lib\postcss.d.ts:): Processor
+node_modules\postcss\lib\postcss.d.ts:declare function postcss(...plugins: postcss.AcceptedPlugin[]): Processor
+node_modules\postcss\lib\previous-map.d.ts:import { ProcessOptions } from './postcss.js'
+node_modules\postcss\lib\previous-map.d.ts:   * @param opts Process options.
+node_modules\postcss\lib\previous-map.d.ts:  constructor(css: string, opts?: ProcessOptions)
+node_modules\postcss\lib\processor.d.ts:  ProcessOptions,
+node_modules\postcss\lib\processor.d.ts:declare namespace Processor {
+node_modules\postcss\lib\processor.d.ts:  export { Processor_ as default }
+node_modules\postcss\lib\processor.d.ts: * Contains plugins to process CSS. Create one `Processor` instance,
+node_modules\postcss\lib\processor.d.ts: * const processor = postcss([autoprefixer, postcssNested])
+node_modules\postcss\lib\processor.d.ts: * processor.process(css1).then(result => console.log(result.css))
+node_modules\postcss\lib\processor.d.ts: * processor.process(css2).then(result => console.log(result.css))
+node_modules\postcss\lib\processor.d.ts:declare class Processor_ {
+node_modules\postcss\lib\processor.d.ts:   * Plugins added to this processor.
+node_modules\postcss\lib\processor.d.ts:   * const processor = postcss([autoprefixer, postcssNested])
+node_modules\postcss\lib\processor.d.ts:   * processor.plugins.length //=> 2
+node_modules\postcss\lib\processor.d.ts:   * if (result.processor.version.split('.')[0] !== '6') {
+node_modules\postcss\lib\processor.d.ts:   * processor.process(css, { from: 'a.css', to: 'a.out.css' })
+node_modules\postcss\lib\processor.d.ts:   *            and the processor will take the `Root` from it.
+node_modules\postcss\lib\processor.d.ts:  process(
+node_modules\postcss\lib\processor.d.ts:  process<RootNode extends Document | Root = Root>(
+node_modules\postcss\lib\processor.d.ts:    options: ProcessOptions<RootNode>
+node_modules\postcss\lib\processor.d.ts:   * Adds a plugin to be used as a CSS processor.
+node_modules\postcss\lib\processor.d.ts:   * * Another `Processor` instance. PostCSS will copy plugins
+node_modules\postcss\lib\processor.d.ts:   * const processor = postcss()
+node_modules\postcss\lib\processor.d.ts:   * @param plugin PostCSS plugin or `Processor` with plugins.
+node_modules\postcss\lib\processor.d.ts:   * @return Current processor to make methods chain.
+node_modules\postcss\lib\processor.d.ts:declare class Processor extends Processor_ {}
+node_modules\postcss\lib\processor.d.ts:export = Processor
+node_modules\postcss\lib\result.d.ts:  ProcessOptions,
+node_modules\postcss\lib\result.d.ts:import Processor from './processor.js'
+node_modules\postcss\lib\result.d.ts:  export interface ResultOptions extends ProcessOptions {
+node_modules\postcss\lib\result.d.ts: * postcss([autoprefixer]).process(css).then(result => {
+node_modules\postcss\lib\result.d.ts:   * Options from the `Processor#process` or `Root#toResult` call
+node_modules\postcss\lib\result.d.ts:   * The Processor instance used for this transformation.
+node_modules\postcss\lib\result.d.ts:   * for (const plugin of result.processor.plugins) {
+node_modules\postcss\lib\result.d.ts:  processor: Processor
+node_modules\postcss\lib\result.d.ts:   * @param processor Processor used for this transformation.
+node_modules\postcss\lib\result.d.ts:   * @param opts      Options from the `Processor#process` or `Root#toResult`.
+node_modules\postcss\lib\result.d.ts:  constructor(processor: Processor, root: RootNode, opts: Result.ResultOptions)
+node_modules\postcss\lib\root.d.ts:import { ProcessOptions } from './postcss.js'
+node_modules\postcss\lib\root.d.ts:  toResult(options?: ProcessOptions): Result
+node_modules\signal-exit\dist\cjs\index.d.ts: * to exiting the process, for example via a fatal exception or
+node_modules\signal-exit\dist\cjs\index.d.ts: * Called when the process is exiting, whether via signal, explicit
+node_modules\signal-exit\dist\cjs\index.d.ts: * If the global process object is not suitable for instrumentation,
+node_modules\signal-exit\dist\cjs\signals.d.ts: * signals that terminate Windows processes, but don't
+node_modules\signal-exit\dist\cjs\signals.d.ts: * exit, it'll end up firing `process.emit('exit')`, so
+node_modules\signal-exit\dist\cjs\signals.d.ts: * artificially, inherently leave the process in a
+node_modules\signal-exit\dist\mjs\index.d.ts: * to exiting the process, for example via a fatal exception or
+node_modules\signal-exit\dist\mjs\index.d.ts: * Called when the process is exiting, whether via signal, explicit
+node_modules\signal-exit\dist\mjs\index.d.ts: * If the global process object is not suitable for instrumentation,
+node_modules\signal-exit\dist\mjs\signals.d.ts: * signals that terminate Windows processes, but don't
+node_modules\signal-exit\dist\mjs\signals.d.ts: * exit, it'll end up firing `process.emit('exit')`, so
+node_modules\signal-exit\dist\mjs\signals.d.ts: * artificially, inherently leave the process in a
+node_modules\typescript\lib\lib.dom.d.ts:interface AudioProcessingEventInit extends EventInit {
+node_modules\typescript\lib\lib.dom.d.ts:    processorOptions?: any;
+node_modules\typescript\lib\lib.dom.d.ts:    totalProcessingDelay?: number;
+node_modules\typescript\lib\lib.dom.d.ts:     * Pipes this readable stream to a given writable stream destination. The way in which the piping process behaves under various error conditions can be customized with a number of passed options. It returns a promise that fulfills when the piping process completes successfully, or rejects if any errors were encountered.
+node_modules\typescript\lib\lib.dom.d.ts:     * When this source readable stream closes, destination will be closed, unless preventClose is truthy. The returned promise will be fulfilled once this process completes, unless an error is encountered while closing the destination, in which case it will be rejected with that error.
+node_modules\typescript\lib\lib.dom.d.ts:    processingDuration?: number;
+node_modules\typescript\lib\lib.dom.d.ts:    readonly SHOW_PROCESSING_INSTRUCTION: 0x40;
+node_modules\typescript\lib\lib.dom.d.ts: * A node able to provide real-time frequency and time-domain analysis information. It is an AudioNode that passes the audio stream unchanged from the input to the output, but allows you to take the generated data, process it, and create audio visualizations.
+node_modules\typescript\lib\lib.dom.d.ts: * An audio-processing graph built from audio modules linked together, each represented by an AudioNode.
+node_modules\typescript\lib\lib.dom.d.ts: * A generic interface for representing an audio processing module. Examples include:
+node_modules\typescript\lib\lib.dom.d.ts: * The Web Audio API events that occur when a ScriptProcessorNode input buffer is ready to be processed.
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent)
+node_modules\typescript\lib\lib.dom.d.ts:interface AudioProcessingEvent extends Event {
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/inputBuffer)
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/outputBuffer)
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/playbackTime)
+node_modules\typescript\lib\lib.dom.d.ts:declare var AudioProcessingEvent: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: AudioProcessingEvent;
+node_modules\typescript\lib\lib.dom.d.ts:    new(type: string, eventInitDict: AudioProcessingEventInit): AudioProcessingEvent;
+node_modules\typescript\lib\lib.dom.d.ts:    "processorerror": ErrorEvent;
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioWorkletNode/processorerror_event) */
+node_modules\typescript\lib\lib.dom.d.ts:    onprocessorerror: ((this: AudioWorkletNode, ev: ErrorEvent) => any) | null;
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/BaseAudioContext/createScriptProcessor)
+node_modules\typescript\lib\lib.dom.d.ts:    createScriptProcessor(bufferSize?: number, numberOfInputChannels?: number, numberOfOutputChannels?: number): ScriptProcessorNode;
+node_modules\typescript\lib\lib.dom.d.ts: * The CharacterData abstract interface represents a Node object that contains characters. This is an abstract interface, meaning there aren't any object of type CharacterData: it is implemented by other interfaces, like Text, Comment, or ProcessingInstruction which aren't abstract.
+node_modules\typescript\lib\lib.dom.d.ts: * A delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data and its propagation to the output.
+node_modules\typescript\lib\lib.dom.d.ts:    createEvent(eventInterface: "AudioProcessingEvent"): AudioProcessingEvent;
+node_modules\typescript\lib\lib.dom.d.ts:     * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createProcessingInstruction)
+node_modules\typescript\lib\lib.dom.d.ts:    createProcessingInstruction(target: string, data: string): ProcessingInstruction;
+node_modules\typescript\lib\lib.dom.d.ts: * A change in volume. It is an AudioNode audio-processing module that causes a given gain to be applied to the input data before its propagation to the output. A GainNode always has exactly one input and one output, both with the same number of channels.
+node_modules\typescript\lib\lib.dom.d.ts:     * Sets or retrieves a list of character encodings for input data that must be accepted by the server processing the form.
+node_modules\typescript\lib\lib.dom.d.ts:     * Sets or retrieves the URL to which the form content is sent for processing.
+node_modules\typescript\lib\lib.dom.d.ts: * The IIRFilterNode interface of the Web Audio API is a AudioNode processor which implements a general infinite impulse response (IIR)  filter; this type of filter can be used to implement tone control devices and graphic equalizers as well. It lets the parameters of the filter response be specified, so that it can be tuned as needed.
+node_modules\typescript\lib\lib.dom.d.ts:    /** node is a ProcessingInstruction node. */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly PROCESSING_INSTRUCTION_NODE: 7;
+node_modules\typescript\lib\lib.dom.d.ts:    /** node is a ProcessingInstruction node. */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly PROCESSING_INSTRUCTION_NODE: 7;
+node_modules\typescript\lib\lib.dom.d.ts: * The Web Audio API OfflineAudioCompletionEvent interface represents events that occur when the processing of an OfflineAudioContext is terminated. The complete event implements this interface.
+node_modules\typescript\lib\lib.dom.d.ts: * An AudioContext interface representing an audio-processing graph built from linked together AudioNodes. In contrast with a standard AudioContext, an OfflineAudioContext doesn't render the audio to the device hardware; instead, it generates it, as fast as it can, and outputs the result to an AudioBuffer.
+node_modules\typescript\lib\lib.dom.d.ts: * The OscillatorNode interface represents a periodic waveform, such as a sine wave. It is an AudioScheduledSourceNode audio-processing module that causes a specified frequency of a given wave to be created—in effect, a constant tone.
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingEnd) */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly processingEnd: DOMHighResTimeStamp;
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingStart) */
+node_modules\typescript\lib\lib.dom.d.ts:    readonly processingStart: DOMHighResTimeStamp;
+node_modules\typescript\lib\lib.dom.d.ts: * A processing instruction embeds application-specific instructions in XML which can be ignored by other applications that don't recognize them.
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ProcessingInstruction)
+node_modules\typescript\lib\lib.dom.d.ts:interface ProcessingInstruction extends CharacterData, LinkStyle {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/target) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var ProcessingInstruction: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: ProcessingInstruction;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): ProcessingInstruction;
+node_modules\typescript\lib\lib.dom.d.ts: * Events measuring progress of an underlying process, like an HTTP request (for an XMLHttpRequest, or the loading of the underlying resource of an <img>, <audio>, <video>, <style> or <link>).
+node_modules\typescript\lib\lib.dom.d.ts: * One end of a connection—or potential connection—and how it's configured. Each RTCSessionDescription consists of a description type indicating which part of the offer/answer negotiation process it describes and of the SDP descriptor of the session.
+node_modules\typescript\lib\lib.dom.d.ts:interface ScriptProcessorNodeEventMap {
+node_modules\typescript\lib\lib.dom.d.ts:    "audioprocess": AudioProcessingEvent;
+node_modules\typescript\lib\lib.dom.d.ts: * Allows the generation, processing, or analyzing of audio using JavaScript.
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode)
+node_modules\typescript\lib\lib.dom.d.ts:interface ScriptProcessorNode extends AudioNode {
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/bufferSize)
+node_modules\typescript\lib\lib.dom.d.ts:     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/audioprocess_event)
+node_modules\typescript\lib\lib.dom.d.ts:    onaudioprocess: ((this: ScriptProcessorNode, ev: AudioProcessingEvent) => any) | null;
+node_modules\typescript\lib\lib.dom.d.ts:    addEventListener<K extends keyof ScriptProcessorNodeEventMap>(type: K, listener: (this: ScriptProcessorNode, ev: ScriptProcessorNodeEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+node_modules\typescript\lib\lib.dom.d.ts:    removeEventListener<K extends keyof ScriptProcessorNodeEventMap>(type: K, listener: (this: ScriptProcessorNode, ev: ScriptProcessorNodeEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+node_modules\typescript\lib\lib.dom.d.ts:declare var ScriptProcessorNode: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: ScriptProcessorNode;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): ScriptProcessorNode;
+node_modules\typescript\lib\lib.dom.d.ts: * This Web Speech API interface contains information about the current state of SpeechSynthesisUtterance objects that have been processed in the speech service.
+node_modules\typescript\lib\lib.dom.d.ts:    readonly ownerNode: Element | ProcessingInstruction | null;
+node_modules\typescript\lib\lib.dom.d.ts:     * Returns the result of running encoding's decoder. The method can be invoked zero or more times with options's stream set to true, and then once without options's stream (or set to false), to process a fragmented input. If the invocation without options's stream (or set to false) has no input, it's clearest to omit both arguments.
+node_modules\typescript\lib\lib.dom.d.ts:     * Loads and executes the module script given by moduleURL into all of worklet's global scopes. It can also create additional global scopes as part of this process, depending on the worklet type. The returned promise will fulfill once the script has been successfully loaded and run in all global scopes.
+node_modules\typescript\lib\lib.dom.d.ts:     * The credentials option can be set to a credentials mode to modify the script-fetching process. It defaults to "same-origin".
+node_modules\typescript\lib\lib.dom.d.ts: * An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate <xsl:param> parameter values, and to apply the transformation to documents.
+node_modules\typescript\lib\lib.dom.d.ts: * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor)
+node_modules\typescript\lib\lib.dom.d.ts:interface XSLTProcessor {
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/clearParameters) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/getParameter) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/importStylesheet) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/removeParameter) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/reset) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/setParameter) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToDocument) */
+node_modules\typescript\lib\lib.dom.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToFragment) */
+node_modules\typescript\lib\lib.dom.d.ts:declare var XSLTProcessor: {
+node_modules\typescript\lib\lib.dom.d.ts:    prototype: XSLTProcessor;
+node_modules\typescript\lib\lib.dom.d.ts:    new(): XSLTProcessor;
+node_modules\typescript\lib\lib.scripthost.d.ts:     * It is not necessary to close standard streams; they close automatically when the process ends. If
+node_modules\typescript\lib\lib.webworker.d.ts:interface MediaStreamTrackProcessorInit {
+node_modules\typescript\lib\lib.webworker.d.ts:     * Pipes this readable stream to a given writable stream destination. The way in which the piping process behaves under various error conditions can be customized with a number of passed options. It returns a promise that fulfills when the piping process completes successfully, or rejects if any errors were encountered.
+node_modules\typescript\lib\lib.webworker.d.ts:     * When this source readable stream closes, destination will be closed, unless preventClose is truthy. The returned promise will be fulfilled once this process completes, unless an error is encountered while closing the destination, in which case it will be rejected with that error.
+node_modules\typescript\lib\lib.webworker.d.ts:/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor) */
+node_modules\typescript\lib\lib.webworker.d.ts:interface MediaStreamTrackProcessor {
+node_modules\typescript\lib\lib.webworker.d.ts:    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/readable) */
+node_modules\typescript\lib\lib.webworker.d.ts:declare var MediaStreamTrackProcessor: {
+node_modules\typescript\lib\lib.webworker.d.ts:    prototype: MediaStreamTrackProcessor;
+node_modules\typescript\lib\lib.webworker.d.ts:    new(init: MediaStreamTrackProcessorInit): MediaStreamTrackProcessor;
+node_modules\typescript\lib\lib.webworker.d.ts: * Events measuring progress of an underlying process, like an HTTP request (for an XMLHttpRequest, or the loading of the underlying resource of an <img>, <audio>, <video>, <style> or <link>).
+node_modules\typescript\lib\lib.webworker.d.ts:     * Returns the result of running encoding's decoder. The method can be invoked zero or more times with options's stream set to true, and then once without options's stream (or set to false), to process a fragmented input. If the invocation without options's stream (or set to false) has no input, it's clearest to omit both arguments.
+node_modules\typescript\lib\typescript.d.ts:             *  Exit request; value of command field is "exit".  Ask the server process
+node_modules\typescript\lib\typescript.d.ts:             * Event that is sent when server have finished processing request with specified id.
+node_modules\typescript\lib\typescript.d.ts:                private processCacheLocation;
+node_modules\typescript\lib\typescript.d.ts:         * Note that this field is only set by the module resolution process when
+node_modules\typescript\lib\typescript.d.ts:    interface PreProcessedFileInfo {
+node_modules\typescript\lib\typescript.d.ts:    function preProcessFile(sourceText: string, readImportFiles?: boolean, detectJavaScriptImports?: boolean): PreProcessedFileInfo;
+node_modules\typescript\lib\typescript.d.ts:     * @param transformers An array of `TransformerFactory` callbacks used to process the transformation.
+node_modules\vite\dist\node\index.d.ts:import { SassLegacyPreprocessBaseOptions, SassModernPreprocessBaseOptions, LessPreprocessorBaseOptions, StylusPreprocessorBaseOptions } from '../../types/internal/cssPreprocessorOptions.js';
+node_modules\vite\dist\node\index.d.ts:   * If there is no other activity keeping the event loop running, the process may exit before the fs.FSWatcher object's callback is invoked.
+node_modules\vite\dist\node\index.d.ts:   * Indicates whether the process should continue to run as long as files are being watched. If
+node_modules\vite\dist\node\index.d.ts:   * even if the process continues to run.
+node_modules\vite\dist\node\index.d.ts:    scanProcessing?: Promise<void>;
+node_modules\vite\dist\node\index.d.ts:     * browser process more requests in parallel.
+node_modules\vite\dist\node\index.d.ts:    processing?: Promise<void>;
+node_modules\vite\dist\node\index.d.ts:     * Metadata for each newly discovered dependency after processing
+node_modules\vite\dist\node\index.d.ts: * @deprecated the optimization process runs automatically and does not need to be called
+node_modules\vite\dist\node\index.d.ts:     *   This is only used for soft invalidations so `undefined` is fine but may cause more runtime processing.
+node_modules\vite\dist\node\index.d.ts:  /** The connection is in the process of closing. */
+node_modules\vite\dist\node\index.d.ts:  /** The connection is in the process of closing. */
+node_modules\vite\dist\node\index.d.ts:     * are processed after the first transformRequest call. If called from a load or transform
+node_modules\vite\dist\node\index.d.ts:     * processed will resolve immediately.
+node_modules\vite\dist\node\index.d.ts:   * By default, the plugin quits the build process when it encounters an error. If you set this option to true, it will throw a warning instead and leave the code untouched.
+node_modules\vite\dist\node\index.d.ts:    private _processesing;
+node_modules\vite\dist\node\index.d.ts:     * add a channel to the broadcaster to process messages
+node_modules\vite\dist\node\index.d.ts:     * are processed. If called from a load or transform plugin hook, the id needs to be
+node_modules\vite\dist\node\index.d.ts:     * static imports section of the module graph has been processed will resolve immediately.
+node_modules\vite\dist\node\index.d.ts:     * Options for preprocessors.
+node_modules\vite\dist\node\index.d.ts:     * In addition to options specific to each processors, Vite supports `additionalData` option.
+node_modules\vite\dist\node\index.d.ts:    preprocessorOptions?: {
+node_modules\vite\dist\node\index.d.ts:        scss?: SassPreprocessorOptions;
+node_modules\vite\dist\node\index.d.ts:        sass?: SassPreprocessorOptions;
+node_modules\vite\dist\node\index.d.ts:        less?: LessPreprocessorOptions;
+node_modules\vite\dist\node\index.d.ts:        styl?: StylusPreprocessorOptions;
+node_modules\vite\dist\node\index.d.ts:        stylus?: StylusPreprocessorOptions;
+node_modules\vite\dist\node\index.d.ts:     * If this option is set, preprocessors will run in workers when possible.
+node_modules\vite\dist\node\index.d.ts:    preprocessorMaxWorkers?: number | true;
+node_modules\vite\dist\node\index.d.ts:    postcss?: string | (PostCSS.ProcessOptions & {
+node_modules\vite\dist\node\index.d.ts:interface PreprocessCSSResult {
+node_modules\vite\dist\node\index.d.ts:declare function preprocessCSS(code: string, filename: string, config: ResolvedConfig): Promise<PreprocessCSSResult>;
+node_modules\vite\dist\node\index.d.ts:type PreprocessorAdditionalDataResult = string | {
+node_modules\vite\dist\node\index.d.ts:type PreprocessorAdditionalData = string | ((source: string, filename: string) => PreprocessorAdditionalDataResult | Promise<PreprocessorAdditionalDataResult>);
+node_modules\vite\dist\node\index.d.ts:type SassPreprocessorOptions = {
+node_modules\vite\dist\node\index.d.ts:    additionalData?: PreprocessorAdditionalData;
+node_modules\vite\dist\node\index.d.ts:} & SassLegacyPreprocessBaseOptions) | ({
+node_modules\vite\dist\node\index.d.ts:} & SassModernPreprocessBaseOptions));
+node_modules\vite\dist\node\index.d.ts:type LessPreprocessorOptions = {
+node_modules\vite\dist\node\index.d.ts:    additionalData?: PreprocessorAdditionalData;
+node_modules\vite\dist\node\index.d.ts:} & LessPreprocessorBaseOptions;
+node_modules\vite\dist\node\index.d.ts:type StylusPreprocessorOptions = {
+node_modules\vite\dist\node\index.d.ts:    additionalData?: PreprocessorAdditionalData;
+node_modules\vite\dist\node\index.d.ts:} & StylusPreprocessorBaseOptions;
+node_modules\vite\dist\node\index.d.ts:     * restarting the server throwing early to stop processing current files. We avoided this for
+node_modules\vite\dist\node\index.d.ts:     * If true, `process.env` referenced in code will be preserved as-is and evaluated in runtime.
+node_modules\vite\dist\node\index.d.ts:    keepProcessEnv?: boolean;
+node_modules\vite\dist\node\index.d.ts:    keepProcessEnv?: boolean;
+node_modules\vite\dist\node\index.d.ts:type DefaultEnvironmentOptions = Omit<EnvironmentOptions, 'consumer' | 'resolve' | 'keepProcessEnv'> & {
+node_modules\vite\dist\node\index.d.ts:     * @default process.cwd()
+node_modules\vite\dist\node\index.d.ts:     * CSS related options (preprocessors and CSS modules)
+node_modules\vite\dist\node\index.d.ts:         * rollup worker bundling process.
+node_modules\vite\dist\node\index.d.ts:     * Append fake `&lang.(ext)` when queries are specified, to preserve the file extension for following plugins to process.
+node_modules\vite\dist\node\index.d.ts:export { BuildEnvironment, Connect, DevEnvironment, EnvironmentModuleGraph, EnvironmentModuleNode, FSWatcher, FetchableDevEnvironment, HttpProxy, ModuleGraph, ModuleNode, PluginContainer, RunnableDevEnvironment, SplitVendorChunkCache, Terser, WebSocket, WebSocketAlias, WebSocketServer, build, buildErrorMessage, createBuilder, createFetchableDevEnvironment, createFilter, createIdResolver, createLogger, createRunnableDevEnvironment, createServer, createServerHotChannel, createServerModuleRunner, createServerModuleRunnerTransport, defaultAllowedOrigins, DEFAULT_CLIENT_CONDITIONS as defaultClientConditions, DEFAULT_CLIENT_MAIN_FIELDS as defaultClientMainFields, DEFAULT_SERVER_CONDITIONS as defaultServerConditions, DEFAULT_SERVER_MAIN_FIELDS as defaultServerMainFields, defineConfig, fetchModule, formatPostcssSourceMap, isCSSRequest, isFetchableDevEnvironment, isFileLoadingAllowed, isFileServingAllowed, isRunnableDevEnvironment, loadConfigFromFile, loadEnv, mergeAlias, mergeConfig, ssrTransform as moduleRunnerTransform, normalizePath, optimizeDeps, perEnvironmentPlugin, perEnvironmentState, preprocessCSS, preview, resolveConfig, resolveEnvPrefix, rollupVersion, runnerImport, searchForWorkspaceRoot, send, sortUserPlugins, splitVendorChunk, splitVendorChunkPlugin, transformWithEsbuild, VERSION as version };
+node_modules\vite\dist\node\index.d.ts:export type { Alias, AliasOptions, AnymatchFn, AnymatchPattern, AppType, BindCLIShortcutsOptions, BuildEnvironmentOptions, BuildOptions, BuilderOptions, CLIShortcut, CSSModulesOptions, CSSOptions, CommonServerOptions, ConfigEnv, CorsOptions, CorsOrigin, DepOptimizationConfig, DepOptimizationMetadata, DepOptimizationOptions, DevEnvironmentContext, DevEnvironmentOptions, ESBuildOptions, ESBuildTransformResult, Environment, EnvironmentOptions, ExperimentalOptions, ExportsData, FetchModuleOptions, FetchableDevEnvironmentContext, FileSystemServeOptions, FilterPattern, HMRBroadcaster, HMRBroadcasterClient, HMRChannel, HTMLOptions, HmrContext, HmrOptions, HookHandler, HotChannel, HotChannelClient, HotChannelListener, HotUpdateOptions, HtmlTagDescriptor, HttpServer, IndexHtmlTransform, IndexHtmlTransformContext, IndexHtmlTransformHook, IndexHtmlTransformResult, InlineConfig, InternalResolveOptions, JsonOptions, LegacyOptions, LessPreprocessorOptions, LibraryFormats, LibraryOptions, LogErrorOptions, LogLevel, LogOptions, LogType, Logger, LoggerOptions, Manifest, ManifestChunk, MapToFunction, AnymatchMatcher as Matcher, ModulePreloadOptions, ModuleRunnerTransformOptions, NormalizedHotChannel, NormalizedHotChannelClient, NormalizedServerHotChannel, OptimizedDepInfo, Plugin, PluginHookUtils, PluginOption, PreprocessCSSResult, PreviewOptions, PreviewServer, PreviewServerHook, ProxyOptions, RenderBuiltAssetUrl, ResolveFn, ResolveModulePreloadDependenciesFn, ResolveOptions, ResolvedBuildEnvironmentOptions, ResolvedBuildOptions, ResolvedCSSOptions, ResolvedConfig, ResolvedDevEnvironmentOptions, ResolvedModulePreloadOptions, ResolvedPreviewOptions, ResolvedSSROptions, ResolvedServerOptions, ResolvedServerUrls, ResolvedUrl, ResolvedWorkerOptions, ResolverFunction, ResolverObject, RollupCommonJSOptions, RollupDynamicImportVarsOptions, RunnableDevEnvironmentContext, SSROptions, SSRTarget, SassPreprocessorOptions, SendOptions, ServerHMRChannel, ServerHook, ServerHotChannel, ServerModuleRunnerOptions, ServerOptions, SkipInformation, SsrDepOptimizationConfig, StylusPreprocessorOptions, TerserOptions, TransformOptions, TransformResult, UserConfig, UserConfigExport, UserConfigFn, UserConfigFnObject, UserConfigFnPromise, ViteBuilder, ViteDevServer, WatchOptions, WebSocketClient, WebSocketCustomListener };
+node_modules\vite\dist\node\module-runner.d.ts:    private processImport;
+node_modules\vite\dist\node\module-runner.d.ts:     * Configure how source maps are resolved. Prefers `node` if `process.setSourceMapsEnabled` is available.
+node_modules\vite\dist\node\module-runner.d.ts:     * You can provide an object to configure how file contents and source maps are resolved for files that were not processed by Vite.
+node_modules\vite\types\internal\cssPreprocessorOptions.d.ts:export type SassLegacyPreprocessBaseOptions = Omit<
+node_modules\vite\types\internal\cssPreprocessorOptions.d.ts:export type SassModernPreprocessBaseOptions = Omit<
+node_modules\vite\types\internal\cssPreprocessorOptions.d.ts:export type LessPreprocessorBaseOptions = Omit<
+node_modules\vite\types\internal\cssPreprocessorOptions.d.ts:export type StylusPreprocessorBaseOptions = Omit<
+node_modules\web-streams-polyfill\dist\types\ponyfill.d.ts:     * Pipes this readable stream to a given writable stream. The way in which the piping process behaves under
+node_modules\web-streams-polyfill\dist\types\ponyfill.d.ts:     * when the piping process completes successfully, or rejects if any errors were encountered.
+node_modules\web-streams-polyfill\dist\types\ponyfill.d.ts:     * Closes the stream. The underlying sink will finish processing any previously-written chunks, before invoking its
+node_modules\web-streams-polyfill\dist\types\ponyfill.d.ts:     * successfully closes, or rejects if an error is encountered during this process. Additionally, it will reject with
+node_modules\web-streams-polyfill\dist\types\ponyfill.d.ts:     * errored before the writing process is initiated.
+node_modules\web-streams-polyfill\dist\types\ts3.6\ponyfill.d.ts:     * Pipes this readable stream to a given writable stream. The way in which the piping process behaves under
+node_modules\web-streams-polyfill\dist\types\ts3.6\ponyfill.d.ts:     * when the piping process completes successfully, or rejects if any errors were encountered.
+node_modules\web-streams-polyfill\dist\types\ts3.6\ponyfill.d.ts:     * Closes the stream. The underlying sink will finish processing any previously-written chunks, before invoking its
+node_modules\web-streams-polyfill\dist\types\ts3.6\ponyfill.d.ts:     * successfully closes, or rejects if an error is encountered during this process. Additionally, it will reject with
+node_modules\web-streams-polyfill\dist\types\ts3.6\ponyfill.d.ts:     * errored before the writing process is initiated.
+services\geminiService.ts:  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+services\supabaseClient.ts:const supabaseUrl = process.env.SUPABASE_URL;
+services\supabaseClient.ts:const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
