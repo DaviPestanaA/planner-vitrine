@@ -1,7 +1,3 @@
-<div className="fixed inset-0 bg-black text-white p-10 z-[999999]">
-  TAILWIND ATIVO
-</div>
-
 import React, { useState, useEffect } from 'react';
 import Layout from './components/Layout';
 import ClientList from './components/ClientList';
@@ -58,23 +54,6 @@ const App: React.FC = () => {
 
   return (
     <Layout activeTab={activeTab} setActiveTab={setActiveTab}>
-      {/* Badge de debug (pode apagar depois) */}
-      <div
-        style={{
-          position: 'fixed',
-          top: 12,
-          left: 12,
-          zIndex: 9999,
-          background: '#fff',
-          padding: '6px 10px',
-          borderRadius: 8,
-          border: '1px solid #e5e7eb',
-          fontWeight: 700,
-        }}
-      >
-        APP RENDERIZANDO
-      </div>
-
       {isLoading && (
         <div className="fixed top-0 left-0 w-full h-1 bg-blue-600 animate-pulse z-[200]" />
       )}

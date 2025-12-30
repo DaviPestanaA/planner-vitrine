@@ -67,33 +67,68 @@ const updateState = (
 };
 
 const uuid = () => {
-  // browser moderno
   if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID();
-  // fallback simples (último caso)
   return `tmp-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+};
+
+/**
+ * ✅ NORMALIZAÇÃO CENTRAL
+ * Garante que SEMPRE teremos:
+ * - client.name (p/ DB e lógica)
+ * - client.nome (p/ UI atual)
+ * sincronizados.
+ */
+const normalizeClient = (input: any): any => {
+  const raw = (input?.name ?? input?.nome ?? '').toString();
+  const normalizedName = raw.trim();
+
+  return {
+    ...input,
+    name: normalizedName,
+    nome: normalizedName, // <- isso mata o "Sem nome"
+  };
 };
 
 /**
  * ✅ Mapeadores DB <-> App
  * DB (clients): id (uuid), name (text), created_at (timestamp)
- * App (Client): id, name, createdAt
+ * App (Client): id, name (e também nome), createdAt
  */
-const dbClientToApp = (row: any): Client => ({
-  id: row.id,
-  // se seu type usar "name", mantém; se usar "nome", ajuste aqui
-  name: row.name ?? row.nome ?? '',
-  createdAt: row.created_at ?? row.createdAt ?? new Date().toISOString(),
-});
+const dbClientToApp = (row: any): Client => {
+  const base = normalizeClient({
+    id: row.id,
+    name: row.name ?? row.nome ?? '',
+    createdAt: row.created_at ?? row.createdAt ?? new Date().toISOString(),
+    // se você tiver colunas extras depois, mantenha aqui (instagram, nicho etc)
+    instagram: row.instagram,
+    nicho: row.nicho,
+    tomDeVoz: row.tomDeVoz,
+    objetivos: row.objetivos,
+    observacoes: row.observacoes,
+  });
 
-const appClientToDbInsert = (client: Omit<Client, 'id' | 'createdAt'>) => ({
-  name: (client as any).name ?? (client as any).nome ?? '',
-});
+  return base as Client;
+};
+
+const appClientToDbInsert = (client: Omit<Client, 'id' | 'createdAt'>) => {
+  const c = normalizeClient(client);
+  return {
+    name: c.name ?? '',
+    // se você NÃO tem essas colunas no Supabase, pode apagar abaixo
+    instagram: c.instagram ?? null,
+    nicho: c.nicho ?? null,
+    tomDeVoz: c.tomDeVoz ?? null,
+    objetivos: c.objetivos ?? null,
+    observacoes: c.observacoes ?? null,
+  };
+};
 
 const appClientToDbUpdate = (updates: Partial<Client>) => {
-  const payload: any = { ...updates };
+  const u = normalizeClient(updates);
 
-  // Normaliza nome
-  if ('nome' in payload && !('name' in payload)) payload.name = payload.nome;
+  const payload: any = { ...u };
+
+  // remove aliases
   delete payload.nome;
 
   // Nunca tenta atualizar createdAt direto (DB usa created_at)
@@ -104,17 +139,14 @@ const appClientToDbUpdate = (updates: Partial<Client>) => {
 };
 
 /**
- * DB (cards) pelo seu print:
+ * DB (cards):
  * id (uuid), title (text), client_id (uuid), created_at (timestamp)
- * App (ContentCard) tem muito mais campos — vamos salvar no DB só o que existe,
- * e manter o resto no localStorage (sem quebrar).
+ * App (ContentCard) tem mais campos — mantemos extra no localStorage.
  */
 const dbCardToApp = (row: any): ContentCard => ({
   id: row.id,
   clientId: row.client_id ?? row.clientId ?? '',
   dateISO: row.dateISO ?? '',
-
-  // seu app usa titulo; no DB é title
   titulo: row.titulo ?? row.title ?? 'Novo Post',
 
   tipo: row.tipo ?? 'Post',
@@ -134,18 +166,14 @@ const dbCardToApp = (row: any): ContentCard => ({
 });
 
 const appCardToDbInsert = (card: ContentCard) => ({
-  // No DB: title / client_id
   title: card.titulo ?? 'Novo Post',
   client_id: card.clientId,
 });
 
 const appCardToDbUpdate = (updates: Partial<ContentCard>) => {
   const payload: any = {};
-
-  // Só atualiza colunas que sabemos que existem
   if (typeof updates.titulo === 'string') payload.title = updates.titulo;
   if (typeof updates.clientId === 'string') payload.client_id = updates.clientId;
-
   return payload;
 };
 
@@ -163,7 +191,6 @@ const actions: Actions = {
     updateState({ isLoading: true });
 
     try {
-      // ✅ order correto: 'name' (não 'nome')
       const { data: clientsRaw, error: clientError } = await supabase
         .from('clients')
         .select('*')
@@ -174,7 +201,6 @@ const actions: Actions = {
       if (clientError) console.error('Supabase clients error:', clientError);
       if (cardError) console.error('Supabase cards error:', cardError);
 
-      // Se qualquer um falhar, não derruba o app: mantém local
       if (clientError || cardError) throw new Error('Falha na sincronização');
 
       updateState({
@@ -189,47 +215,59 @@ const actions: Actions = {
   },
 
   addClient: async (clientData) => {
-    // cria um client local imediato (UX)
+    // ✅ normaliza ANTES de salvar no state (garante nome/nome)
+    const normalized = normalizeClient(clientData);
+
     const tempClient: Client = {
-      ...(clientData as any),
+      ...(normalized as any),
       id: uuid(),
       createdAt: new Date().toISOString(),
     };
 
-    updateState((prev) => ({ clients: [...prev.clients, tempClient] }));
+    updateState((prev) => ({
+      clients: [...prev.clients, tempClient],
+      currentClientId: tempClient.id,
+    }));
 
     if (!supabase) return tempClient;
 
-    // ✅ deixa o Supabase criar o UUID e created_at
     const { data, error } = await supabase
       .from('clients')
-      .insert(appClientToDbInsert(clientData))
+      .insert(appClientToDbInsert(normalized))
       .select('*')
       .single();
 
     if (error) {
       console.error('Erro ao persistir no Supabase (clients):', error);
-      return tempClient; // mantém ao menos local
+      return tempClient;
     }
 
     const saved = dbClientToApp(data);
 
-    // substitui o temp pelo salvo real
     updateState((prev) => ({
       clients: prev.clients.map((c) => (c.id === tempClient.id ? saved : c)),
+      currentClientId: saved.id,
     }));
 
     return saved;
   },
 
   updateClient: async (id, updates) => {
+    // ✅ normaliza update (sincroniza nome + name)
+    const normalized = normalizeClient(updates);
+
     updateState((prev) => ({
-      clients: prev.clients.map((c) => (c.id === id ? { ...c, ...updates } : c)),
+      clients: prev.clients.map((c) =>
+        c.id === id ? ({ ...c, ...normalized } as any) : c
+      ),
     }));
 
     if (!supabase) return;
 
-    const { error } = await supabase.from('clients').update(appClientToDbUpdate(updates)).eq('id', id);
+    const { error } = await supabase
+      .from('clients')
+      .update(appClientToDbUpdate(normalized))
+      .eq('id', id);
 
     if (error) console.error('Erro ao atualizar no Supabase (clients):', error);
   },
@@ -271,11 +309,7 @@ const actions: Actions = {
 
     if (!supabase) return newCard;
 
-    // ✅ salva no DB só (title, client_id)
-    if (!newCard.clientId) {
-      // sem clientId não dá pra persistir card no seu schema atual
-      return newCard;
-    }
+    if (!newCard.clientId) return newCard;
 
     const { data, error } = await supabase
       .from('cards')
@@ -290,7 +324,6 @@ const actions: Actions = {
 
     const saved = dbCardToApp(data);
 
-    // substitui o temp pelo salvo real (id uuid do supabase)
     updateState((prev) => ({
       cards: prev.cards.map((c) => (c.id === newCard.id ? { ...c, id: saved.id } : c)),
     }));
@@ -306,7 +339,6 @@ const actions: Actions = {
     if (!supabase) return;
 
     const payload = appCardToDbUpdate(updates);
-    // se não tem nada pra atualizar no DB, não faz request
     if (Object.keys(payload).length === 0) return;
 
     const { error } = await supabase.from('cards').update(payload).eq('id', id);
@@ -335,7 +367,6 @@ const actions: Actions = {
     updateState((prev) => ({ cards: [...prev.cards, newCard] }));
 
     if (!supabase) return;
-
     if (!newCard.clientId) return;
 
     const { error } = await supabase.from('cards').insert(appCardToDbInsert(newCard));
@@ -360,6 +391,7 @@ export const useStore = <T,>(selector: (state: FullStore) => T): T => {
         forceUpdate({});
       }
     };
+
     listeners.add(listener);
     return () => {
       listeners.delete(listener);
